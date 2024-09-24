@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "launch" "DESTINATION" "share/$(PROJECT_NAME)")
-ament_cmake_symlink_install_directory("/home/ubuntu/dev_ws/src/motor_control" DIRECTORY "launch" "DESTINATION" "share/$(PROJECT_NAME)")
+# install(DIRECTORY "launch" "DESTINATION" "share/motor_control")
+ament_cmake_symlink_install_directory("/home/ubuntu/dev_ws/src/motor_control" DIRECTORY "launch" "DESTINATION" "share/motor_control")
 
 # install(FILES "/home/ubuntu/dev_ws/build/motor_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/motor_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/ubuntu/dev_ws/src/motor_control" FILES "/home/ubuntu/dev_ws/build/motor_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/motor_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

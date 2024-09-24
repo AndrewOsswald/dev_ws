@@ -1,5 +1,5 @@
-/home/ubuntu/dev_ws/install/motor_control/share/$(PROJECT_NAME)/launch/listener.launch.py
-/home/ubuntu/dev_ws/install/motor_control/share/$(PROJECT_NAME)/launch/talker.launch.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/listener.launch.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/talker.launch.py
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
 /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
