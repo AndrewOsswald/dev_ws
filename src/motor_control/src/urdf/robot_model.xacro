@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<robot name="saltbot" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:include filename="additional_files/materials.xacro" />
+    
+    <link name="base_footprint"/>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link" />
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0 0 .21" rpy="0 0 0"/>
+            <geometry>
+                <box size=".762 .5334 .2"/>
+            </geometry>
+            <material name="grey"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0.21" rpy="0 0 0"/>
+            <geometry>
+                <box size=".762 .5334 .2"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="BRwheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="BRwheel_link"/>
+        <origin xyz="-.2667 -0.271 .1" rpy="-1.57 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="BRwheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="FRwheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="FRwheel_link"/>
+        <origin xyz=".2667 -0.271 .1" rpy="-1.57 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="FRwheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="BLwheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="BLwheel_link"/>
+        <origin xyz="-.2667 0.271 .1" rpy="-1.57 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="BLwheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+            <material name="orange"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="FLwheel_joint" type="continuous">
+        <parent link="base_link"/>
+        <child link="FLwheel_link"/>
+        <origin xyz=".2667 0.271 .1" rpy="-1.57 0 0"/>
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="FLwheel_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 1.57"/>
+            <geometry>
+                <cylinder length="0.04" radius="0.11"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    
+
+</robot>

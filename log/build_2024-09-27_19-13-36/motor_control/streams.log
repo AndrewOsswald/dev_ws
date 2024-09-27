@@ -1,0 +1,24 @@
+[0.067s] Invoking command in '/home/ubuntu/dev_ws/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/motor_control -- -j4 -l4
+[0.255s] Invoked command in '/home/ubuntu/dev_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/ubuntu/dev_ws/build/motor_control -- -j4 -l4
+[0.424s] Invoking command in '/home/ubuntu/dev_ws/build/motor_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/motor_control
+[0.465s] -- Install configuration: ""
+[0.466s] -- Execute custom install script
+[0.469s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/listener.launch.py
+[0.470s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/saltbot.launch.py
+[0.471s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/talker.launch.py
+[0.473s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+[0.475s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+[0.476s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+[0.478s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+[0.479s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.sh
+[0.481s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.dsv
+[0.482s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.bash
+[0.484s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.sh
+[0.485s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.zsh
+[0.487s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.dsv
+[0.488s] -- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.dsv
+[0.528s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control
+[0.529s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+[0.531s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+[0.532s] -- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.xml
+[0.543s] Invoked command in '/home/ubuntu/dev_ws/build/motor_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/ubuntu/dev_ws/build/motor_control

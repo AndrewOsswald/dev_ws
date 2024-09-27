@@ -1,4 +1,5 @@
 /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/listener.launch.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/saltbot.launch.py
 /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/talker.launch.py
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
