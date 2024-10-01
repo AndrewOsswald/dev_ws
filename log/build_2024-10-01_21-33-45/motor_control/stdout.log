@@ -1,0 +1,18 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/motor_control.launch.py
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.sh
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.dsv
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.bash
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.sh
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.zsh
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.dsv
+-- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.dsv
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake
+-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.xml

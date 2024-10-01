@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.003906] (py_pubsub) JobQueued: {'identifier': 'py_pubsub', 'dependencies': OrderedDict()}
+[0.005531] (py_pubsub) JobStarted: {'identifier': 'py_pubsub'}
+[0.098141] (-) TimerEvent: {}
+[0.200395] (-) TimerEvent: {}
+[0.302994] (-) TimerEvent: {}
+[0.404700] (-) TimerEvent: {}
+[0.505600] (-) TimerEvent: {}
+[0.606453] (-) TimerEvent: {}
+[0.707400] (-) TimerEvent: {}
+[0.808120] (-) TimerEvent: {}
+[0.908907] (-) TimerEvent: {}
+[1.009664] (-) TimerEvent: {}
+[1.110412] (-) TimerEvent: {}
+[1.211344] (-) TimerEvent: {}
+[1.312200] (-) TimerEvent: {}
+[1.412973] (-) TimerEvent: {}
+[1.513769] (-) TimerEvent: {}
+[1.614546] (-) TimerEvent: {}
+[1.716495] (-) TimerEvent: {}
+[1.819986] (-) TimerEvent: {}
+[1.921902] (-) TimerEvent: {}
+[2.022784] (-) TimerEvent: {}
+[2.123629] (-) TimerEvent: {}
+[2.224387] (-) TimerEvent: {}
+[2.325100] (-) TimerEvent: {}
+[2.425833] (-) TimerEvent: {}
+[2.526549] (-) TimerEvent: {}
+[2.627263] (-) TimerEvent: {}
+[2.728008] (-) TimerEvent: {}
+[2.828733] (-) TimerEvent: {}
+[2.929508] (-) TimerEvent: {}
+[3.030321] (-) TimerEvent: {}
+[3.131350] (-) TimerEvent: {}
+[3.232940] (-) TimerEvent: {}
+[3.335577] (-) TimerEvent: {}
+[3.437643] (-) TimerEvent: {}
+[3.538641] (-) TimerEvent: {}
+[3.639630] (-) TimerEvent: {}
+[3.740465] (-) TimerEvent: {}
+[3.841225] (-) TimerEvent: {}
+[3.941964] (-) TimerEvent: {}
+[4.042913] (-) TimerEvent: {}
+[4.135094] (py_pubsub) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_pubsub', 'build', '--build-base', '/home/ubuntu/dev_ws/build/py_pubsub/build', 'install', '--record', '/home/ubuntu/dev_ws/build/py_pubsub/install.log', '--install-scripts', '$base/lib/py_pubsub', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/dev_ws/src/py_pubsub', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '172.20.10.3 61723 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/dev_ws/src', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/dev_ws/build/py_pubsub', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.3 61723 172.20.10.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/dev_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/dev_ws/install/motor_control'}, 'shell': False}
+[4.146965] (-) TimerEvent: {}
+[4.252120] (-) TimerEvent: {}
+[4.352925] (-) TimerEvent: {}
+[4.453785] (-) TimerEvent: {}
+[4.554620] (-) TimerEvent: {}
+[4.655363] (-) TimerEvent: {}
+[4.756350] (-) TimerEvent: {}
+[4.857784] (-) TimerEvent: {}
+[4.958739] (-) TimerEvent: {}
+[5.059766] (-) TimerEvent: {}
+[5.162256] (-) TimerEvent: {}
+[5.263236] (-) TimerEvent: {}
+[5.365725] (-) TimerEvent: {}
+[5.384530] (py_pubsub) StdoutLine: {'line': b'running egg_info\n'}
+[5.387648] (py_pubsub) StdoutLine: {'line': b'creating ../../build/py_pubsub/py_pubsub.egg-info\n'}
+[5.390145] (py_pubsub) StdoutLine: {'line': b'writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO\n'}
+[5.391170] (py_pubsub) StdoutLine: {'line': b'writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt\n'}
+[5.392827] (py_pubsub) StdoutLine: {'line': b'writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt\n'}
+[5.393813] (py_pubsub) StdoutLine: {'line': b'writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt\n'}
+[5.394455] (py_pubsub) StdoutLine: {'line': b'writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt\n'}
+[5.401158] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[5.465939] (-) TimerEvent: {}
+[5.566804] (-) TimerEvent: {}
+[5.600916] (py_pubsub) StdoutLine: {'line': b"reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[5.606164] (py_pubsub) StdoutLine: {'line': b"writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'\n"}
+[5.607136] (py_pubsub) StdoutLine: {'line': b'running build\n'}
+[5.608200] (py_pubsub) StdoutLine: {'line': b'running build_py\n'}
+[5.608802] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/py_pubsub/build\n'}
+[5.609397] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/py_pubsub/build/lib\n'}
+[5.609885] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[5.610450] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/motor_driver.py -> /home/ubuntu/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[5.610886] (py_pubsub) StdoutLine: {'line': b'copying py_pubsub/__init__.py -> /home/ubuntu/dev_ws/build/py_pubsub/build/lib/py_pubsub\n'}
+[5.611361] (py_pubsub) StdoutLine: {'line': b'running install\n'}
+[5.613471] (py_pubsub) StdoutLine: {'line': b'running install_lib\n'}
+[5.618413] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[5.620556] (py_pubsub) StdoutLine: {'line': b'copying /home/ubuntu/dev_ws/build/py_pubsub/build/lib/py_pubsub/motor_driver.py -> /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[5.621425] (py_pubsub) StdoutLine: {'line': b'copying /home/ubuntu/dev_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub\n'}
+[5.624416] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/motor_driver.py to motor_driver.cpython-38.pyc\n'}
+[5.628809] (py_pubsub) StdoutLine: {'line': b'byte-compiling /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/__init__.py to __init__.cpython-38.pyc\n'}
+[5.630126] (py_pubsub) StdoutLine: {'line': b'running install_data\n'}
+[5.631780] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/py_pubsub/share/ament_index\n'}
+[5.632679] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/py_pubsub/share/ament_index/resource_index\n'}
+[5.633929] (py_pubsub) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[5.634597] (py_pubsub) StdoutLine: {'line': b'copying resource/py_pubsub -> /home/ubuntu/dev_ws/install/py_pubsub/share/ament_index/resource_index/packages\n'}
+[5.635233] (py_pubsub) StdoutLine: {'line': b'copying package.xml -> /home/ubuntu/dev_ws/install/py_pubsub/share/py_pubsub\n'}
+[5.636155] (py_pubsub) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.642389] (py_pubsub) StdoutLine: {'line': b'Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info\n'}
+[5.649691] (py_pubsub) StdoutLine: {'line': b'running install_scripts\n'}
+[5.667124] (-) TimerEvent: {}
+[5.736061] (py_pubsub) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/dev_ws/build/py_pubsub/install.log'\n"}
+[5.767734] (-) TimerEvent: {}
+[5.864317] (py_pubsub) CommandEnded: {'returncode': 0}
+[5.870958] (-) TimerEvent: {}
+[5.963134] (py_pubsub) JobEnded: {'identifier': 'py_pubsub', 'rc': 0}
+[5.968465] (-) EventReactorShutdown: {}

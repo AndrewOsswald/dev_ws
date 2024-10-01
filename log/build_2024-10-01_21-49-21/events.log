@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.001264] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.002366] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.099229] (-) TimerEvent: {}
+[0.200267] (-) TimerEvent: {}
+[0.301063] (-) TimerEvent: {}
+[0.401810] (-) TimerEvent: {}
+[0.502564] (-) TimerEvent: {}
+[0.603329] (-) TimerEvent: {}
+[0.704076] (-) TimerEvent: {}
+[0.805259] (-) TimerEvent: {}
+[0.905945] (-) TimerEvent: {}
+[1.006670] (-) TimerEvent: {}
+[1.107399] (-) TimerEvent: {}
+[1.208413] (-) TimerEvent: {}
+[1.309827] (-) TimerEvent: {}
+[1.413282] (-) TimerEvent: {}
+[1.519149] (-) TimerEvent: {}
+[1.619972] (-) TimerEvent: {}
+[1.720773] (-) TimerEvent: {}
+[1.821547] (-) TimerEvent: {}
+[1.922280] (-) TimerEvent: {}
+[2.023179] (-) TimerEvent: {}
+[2.123917] (-) TimerEvent: {}
+[2.224736] (-) TimerEvent: {}
+[2.326352] (-) TimerEvent: {}
+[2.430099] (-) TimerEvent: {}
+[2.531966] (-) TimerEvent: {}
+[2.632937] (-) TimerEvent: {}
+[2.733760] (-) TimerEvent: {}
+[2.834633] (-) TimerEvent: {}
+[2.935452] (-) TimerEvent: {}
+[3.036214] (-) TimerEvent: {}
+[3.136964] (-) TimerEvent: {}
+[3.237786] (-) TimerEvent: {}
+[3.338615] (-) TimerEvent: {}
+[3.439505] (-) TimerEvent: {}
+[3.540722] (-) TimerEvent: {}
+[3.642067] (-) TimerEvent: {}
+[3.743257] (-) TimerEvent: {}
+[3.845523] (-) TimerEvent: {}
+[3.948584] (-) TimerEvent: {}
+[4.008789] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motor_controller', 'build', '--build-base', '/home/ubuntu/dev_ws/build/motor_controller/build', 'install', '--record', '/home/ubuntu/dev_ws/build/motor_controller/install.log', '--install-scripts', '$base/lib/motor_controller', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/dev_ws/src/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '172.20.10.3 61723 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/home/ubuntu/dev_ws/src', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/ubuntu/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/ubuntu/dev_ws/install/py_pubsub:/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/ubuntu/dev_ws/build/motor_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.3 61723 172.20.10.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/dev_ws/install/motor_control'}, 'shell': False}
+[4.048855] (-) TimerEvent: {}
+[4.150021] (-) TimerEvent: {}
+[4.250881] (-) TimerEvent: {}
+[4.351624] (-) TimerEvent: {}
+[4.452437] (-) TimerEvent: {}
+[4.553181] (-) TimerEvent: {}
+[4.653962] (-) TimerEvent: {}
+[4.754715] (-) TimerEvent: {}
+[4.855429] (-) TimerEvent: {}
+[4.956234] (-) TimerEvent: {}
+[5.057151] (-) TimerEvent: {}
+[5.157898] (-) TimerEvent: {}
+[5.258641] (-) TimerEvent: {}
+[5.359423] (-) TimerEvent: {}
+[5.460234] (-) TimerEvent: {}
+[5.558252] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[5.560358] (-) TimerEvent: {}
+[5.561305] (motor_controller) StdoutLine: {'line': b'creating ../../build/motor_controller/motor_controller.egg-info\n'}
+[5.562103] (motor_controller) StdoutLine: {'line': b'writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO\n'}
+[5.562846] (motor_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt\n'}
+[5.563648] (motor_controller) StdoutLine: {'line': b'writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt\n'}
+[5.564335] (motor_controller) StdoutLine: {'line': b'writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt\n'}
+[5.564972] (motor_controller) StdoutLine: {'line': b'writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt\n'}
+[5.570512] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[5.660543] (-) TimerEvent: {}
+[5.722632] (motor_controller) StdoutLine: {'line': b"reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[5.726186] (motor_controller) StdoutLine: {'line': b"writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'\n"}
+[5.726903] (motor_controller) StdoutLine: {'line': b'running build\n'}
+[5.727460] (motor_controller) StdoutLine: {'line': b'running build_py\n'}
+[5.728063] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/motor_controller/build\n'}
+[5.728784] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/motor_controller/build/lib\n'}
+[5.729340] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/build/motor_controller/build/lib/motor_controller\n'}
+[5.729922] (motor_controller) StdoutLine: {'line': b'copying motor_controller/motor_driver.py -> /home/ubuntu/dev_ws/build/motor_controller/build/lib/motor_controller\n'}
+[5.730364] (motor_controller) StdoutLine: {'line': b'copying motor_controller/__init__.py -> /home/ubuntu/dev_ws/build/motor_controller/build/lib/motor_controller\n'}
+[5.730909] (motor_controller) StdoutLine: {'line': b'running install\n'}
+[5.734112] (motor_controller) StdoutLine: {'line': b'running install_lib\n'}
+[5.738325] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller\n'}
+[5.739128] (motor_controller) StdoutLine: {'line': b'copying /home/ubuntu/dev_ws/build/motor_controller/build/lib/motor_controller/motor_driver.py -> /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller\n'}
+[5.739862] (motor_controller) StdoutLine: {'line': b'copying /home/ubuntu/dev_ws/build/motor_controller/build/lib/motor_controller/__init__.py -> /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller\n'}
+[5.742362] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller/motor_driver.py to motor_driver.cpython-38.pyc\n'}
+[5.748359] (motor_controller) StdoutLine: {'line': b'byte-compiling /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller/__init__.py to __init__.cpython-38.pyc\n'}
+[5.749617] (motor_controller) StdoutLine: {'line': b'running install_data\n'}
+[5.750389] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/motor_controller/share/ament_index\n'}
+[5.751051] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/motor_controller/share/ament_index/resource_index\n'}
+[5.751501] (motor_controller) StdoutLine: {'line': b'creating /home/ubuntu/dev_ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[5.752041] (motor_controller) StdoutLine: {'line': b'copying resource/motor_controller -> /home/ubuntu/dev_ws/install/motor_controller/share/ament_index/resource_index/packages\n'}
+[5.752680] (motor_controller) StdoutLine: {'line': b'copying package.xml -> /home/ubuntu/dev_ws/install/motor_controller/share/motor_controller\n'}
+[5.753123] (motor_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.760071] (motor_controller) StdoutLine: {'line': b'Copying ../../build/motor_controller/motor_controller.egg-info to /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller-0.0.0-py3.8.egg-info\n'}
+[5.760747] (-) TimerEvent: {}
+[5.765951] (motor_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[5.839188] (motor_controller) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/dev_ws/build/motor_controller/install.log'\n"}
+[5.861064] (-) TimerEvent: {}
+[5.944173] (motor_controller) CommandEnded: {'returncode': 0}
+[5.961183] (-) TimerEvent: {}
+[5.992767] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[5.995846] (-) EventReactorShutdown: {}

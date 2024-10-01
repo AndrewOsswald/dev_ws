@@ -1,6 +1,7 @@
-/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/listener.launch.py
-/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/saltbot.launch.py
-/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/talker.launch.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/motor_control.launch.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/driver_node.py
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/urdf/materials.xacro
+/home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/urdf/robot_model.xacro
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control
 /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control
 /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh

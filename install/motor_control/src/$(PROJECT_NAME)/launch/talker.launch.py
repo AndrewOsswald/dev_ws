@@ -1,1 +1,0 @@
-/home/ubuntu/dev_ws/src/motor_control/launch/talker.launch.py

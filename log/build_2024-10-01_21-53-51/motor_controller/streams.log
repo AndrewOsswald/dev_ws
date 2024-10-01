@@ -1,0 +1,21 @@
+[3.995s] Invoking command in '/home/ubuntu/dev_ws/src/motor_controller': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/ubuntu/dev_ws/build/motor_controller/build install --record /home/ubuntu/dev_ws/build/motor_controller/install.log --install-scripts $base/lib/motor_controller --single-version-externally-managed install_data
+[5.546s] running egg_info
+[5.548s] writing ../../build/motor_controller/motor_controller.egg-info/PKG-INFO
+[5.549s] writing dependency_links to ../../build/motor_controller/motor_controller.egg-info/dependency_links.txt
+[5.550s] writing entry points to ../../build/motor_controller/motor_controller.egg-info/entry_points.txt
+[5.551s] writing requirements to ../../build/motor_controller/motor_controller.egg-info/requires.txt
+[5.552s] writing top-level names to ../../build/motor_controller/motor_controller.egg-info/top_level.txt
+[5.706s] reading manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[5.711s] writing manifest file '../../build/motor_controller/motor_controller.egg-info/SOURCES.txt'
+[5.712s] running build
+[5.712s] running build_py
+[5.713s] running install
+[5.716s] running install_lib
+[5.723s] running install_data
+[5.724s] running install_egg_info
+[5.731s] removing '/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller-0.0.0-py3.8.egg-info' (and everything under it)
+[5.733s] Copying ../../build/motor_controller/motor_controller.egg-info to /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor_controller-0.0.0-py3.8.egg-info
+[5.738s] running install_scripts
+[5.808s] Installing controller script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[5.810s] writing list of installed files to '/home/ubuntu/dev_ws/build/motor_controller/install.log'
+[5.907s] Invoked command in '/home/ubuntu/dev_ws/src/motor_controller' returned '0': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_controller build --build-base /home/ubuntu/dev_ws/build/motor_controller/build install --record /home/ubuntu/dev_ws/build/motor_controller/install.log --install-scripts $base/lib/motor_controller --single-version-externally-managed install_data

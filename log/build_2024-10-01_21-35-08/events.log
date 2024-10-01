@@ -1,0 +1,77 @@
+[0.000000] (-) TimerEvent: {}
+[0.004225] (motor_control) JobQueued: {'identifier': 'motor_control', 'dependencies': OrderedDict()}
+[0.006981] (motor_control) JobStarted: {'identifier': 'motor_control'}
+[0.062619] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'cmake'}
+[0.065729] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'build'}
+[0.073184] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/dev_ws/build/motor_control', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/dev_ws/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '172.20.10.3 61723 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/dev_ws/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.20.10.3 61723 172.20.10.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy')]), 'shell': False}
+[0.098883] (-) TimerEvent: {}
+[0.203911] (-) TimerEvent: {}
+[0.248217] (motor_control) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.304182] (-) TimerEvent: {}
+[0.402553] (motor_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.405291] (-) TimerEvent: {}
+[0.506091] (-) TimerEvent: {}
+[0.606978] (-) TimerEvent: {}
+[0.707944] (-) TimerEvent: {}
+[0.808700] (-) TimerEvent: {}
+[0.909414] (-) TimerEvent: {}
+[1.010097] (-) TimerEvent: {}
+[1.110931] (-) TimerEvent: {}
+[1.211670] (-) TimerEvent: {}
+[1.312447] (-) TimerEvent: {}
+[1.413181] (-) TimerEvent: {}
+[1.513884] (-) TimerEvent: {}
+[1.614745] (-) TimerEvent: {}
+[1.715873] (-) TimerEvent: {}
+[1.747858] (motor_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.816078] (-) TimerEvent: {}
+[1.846449] (motor_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.916638] (-) TimerEvent: {}
+[2.018882] (-) TimerEvent: {}
+[2.121207] (-) TimerEvent: {}
+[2.222009] (-) TimerEvent: {}
+[2.304712] (motor_control) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.322215] (-) TimerEvent: {}
+[2.328095] (motor_control) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.332151] (motor_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.338217] (motor_control) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[2.350353] (motor_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.369955] (motor_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.411408] (motor_control) StdoutLine: {'line': b'-- Generating done\n'}
+[2.422488] (-) TimerEvent: {}
+[2.423599] (motor_control) StdoutLine: {'line': b'-- Build files have been written to: /home/ubuntu/dev_ws/build/motor_control\n'}
+[2.522750] (-) TimerEvent: {}
+[2.529695] (motor_control) CommandEnded: {'returncode': 0}
+[2.623070] (-) TimerEvent: {}
+[2.665737] (motor_control) JobProgress: {'identifier': 'motor_control', 'progress': 'install'}
+[2.733906] (motor_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/dev_ws/build/motor_control'], 'cwd': '/home/ubuntu/dev_ws/build/motor_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '172.20.10.3 61723 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('OLDPWD', '/home/ubuntu'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/ubuntu/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/ubuntu/dev_ws/build/motor_control'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.20.10.3 61723 172.20.10.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy')]), 'shell': False}
+[2.738744] (-) TimerEvent: {}
+[2.780748] (motor_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.782842] (motor_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.789474] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/launch/motor_control.launch.py\n'}
+[2.792707] (motor_control) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/driver_node.py\n'}
+[2.838949] (-) TimerEvent: {}
+[2.841207] (motor_control) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/urdf/materials.xacro\n'}
+[2.888271] (motor_control) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/src/urdf/robot_model.xacro\n'}
+[2.939138] (-) TimerEvent: {}
+[2.940113] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/package_run_dependencies/motor_control\n'}
+[2.942326] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/parent_prefix_path/motor_control\n'}
+[2.944244] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.sh\n'}
+[2.945977] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/ament_prefix_path.dsv\n'}
+[2.948005] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.sh\n'}
+[2.950034] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/environment/path.dsv\n'}
+[2.954670] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.bash\n'}
+[2.957349] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.sh\n'}
+[2.959032] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.zsh\n'}
+[2.960737] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/local_setup.dsv\n'}
+[2.961796] (motor_control) StdoutLine: {'line': b'-- Symlinking: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.dsv\n'}
+[3.010011] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/ament_index/resource_index/packages/motor_control\n'}
+[3.011447] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig.cmake\n'}
+[3.012818] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/cmake/motor_controlConfig-version.cmake\n'}
+[3.014367] (motor_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ubuntu/dev_ws/install/motor_control/share/motor_control/package.xml\n'}
+[3.024563] (motor_control) CommandEnded: {'returncode': 0}
+[3.040029] (-) TimerEvent: {}
+[3.141126] (-) TimerEvent: {}
+[3.243219] (-) TimerEvent: {}
+[3.246776] (motor_control) JobEnded: {'identifier': 'motor_control', 'rc': 0}
+[3.250657] (-) EventReactorShutdown: {}

@@ -1,0 +1,3 @@
+[console_scripts]
+controller = py_pubsub.motor_driver:main
+
