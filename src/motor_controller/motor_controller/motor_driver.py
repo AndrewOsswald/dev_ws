@@ -49,27 +49,25 @@ class MotorController(Node):
         else:
             self.set_motor(self.right_motor, self.right_pwm, 'backward', abs(right_speed))
 
-   def calculate_motor_speeds(self, linear_velocity, angular_velocity):
-    """
-    Calculate the speeds for the left and right motors based on linear and angular velocities.
-    """
-    # Base motor speed is determined by the linear velocity (forward/backward)
-    base_speed = linear_velocity
+    def calculate_motor_speeds(self, linear_velocity, angular_velocity):
+   
+        # Base motor speed is determined by the linear velocity (forward/backward)
+        base_speed = linear_velocity
 
-    # Adjust for turning. Angular velocity adjusts the speed difference between the wheels.
-    left_speed = base_speed - angular_velocity
-    right_speed = base_speed + angular_velocity
+        # Adjust for turning. Angular velocity adjusts the speed difference between the wheels.
+        left_speed = base_speed - angular_velocity
+        right_speed = base_speed + angular_velocity
 
-    # Scale speeds to range between -1 and 1 (assuming x = 1.5 for 100% PWM)
-    max_speed = 1.5  # Maximum speed value corresponding to 100% PWM
-    left_speed = max(-1, min(1, left_speed / max_speed))  # Normalize to -1 to 1 range
-    right_speed = max(-1, min(1, right_speed / max_speed))
+        # Scale speeds to range between -1 and 1 (assuming x = 1.5 for 100% PWM)
+        max_speed = 1.5  # Maximum speed value corresponding to 100% PWM
+        left_speed = max(-1, min(1, left_speed / max_speed))  # Normalize to -1 to 1 range
+        right_speed = max(-1, min(1, right_speed / max_speed))
 
-    # Convert to percentage for PWM (from -100 to 100%)
-    left_speed *= 100
-    right_speed *= 100
+        # Convert to percentage for PWM (from -100 to 100%)
+        left_speed *= 100
+        right_speed *= 100
 
-    return left_speed, right_speed
+        return left_speed, right_speed
 
     def set_motor(self, motor, pwm, direction, speed):
         """
