@@ -51,21 +51,22 @@ class MotorController(Node):
 
     def calculate_motor_speeds(self, linear_velocity, angular_velocity):
    
-        # Base motor speed is determined by the linear velocity (forward/backward)
-        base_speed = linear_velocity
-
         # Adjust for turning. Angular velocity adjusts the speed difference between the wheels.
-        left_speed = base_speed - angular_velocity
-        right_speed = base_speed + angular_velocity
+        left_speed = linear_velocity - angular_velocity
+        right_speed = linear_velocity + angular_velocity
 
-        # Scale speeds to range between -1 and 1 (assuming x = 1.5 for 100% PWM)
-        max_speed = 1.5  # Maximum speed value corresponding to 100% PWM
-        left_speed = max(-1, min(1, left_speed / max_speed))  # Normalize to -1 to 1 range
-        right_speed = max(-1, min(1, right_speed / max_speed))
+        # Test case considerations:
+        # x = 0, z = 1 -> right = 1, left = -1 (turning left)
+        # x = 1, z = 1 -> right = 1, left = 0 (forward + turn left)
+        # x = 0.5, z = 1 -> right = 1, left = -0.5 (50% forward + turn left)
 
-        # Convert to percentage for PWM (from -100 to 100%)
-        left_speed *= 100
-        right_speed *= 100
+        # Normalize the speeds based on maximum possible linear and angular values
+        max_linear_speed = 1.5  # Assuming 1.5 is 100% forward/backward speed
+        max_angular_speed = 1.0  # Full turning speed
+    
+        # Scale motor speeds to ensure values are within the valid range (-1 to 1)
+        left_speed = max(-1, min(1, left_speed / max_linear_speed))
+        right_speed = max(-1, min(1, right_speed / max_linear_speed))
 
         return left_speed, right_speed
 
