@@ -9,24 +9,24 @@ class MotorController(Node):
 
         # Define GPIO pins for front and rear motors on both sides
         # Front left motor
-        self.leftfront_IN1 = 14  # GPIO pin for front left motor forward
-        self.leftfront_IN2 = 15  # GPIO pin for front left motor backward
-        self.leftfront_ENA = 12  # PWM pin for front left motor speed control
+        self.leftfront_IN1 = 17  # GPIO pin for front left motor forward
+        self.leftfront_IN2 = 27  # GPIO pin for front left motor backward
+        self.leftfront_ENA = 13  # PWM pin for front left motor speed control
 
         # Front right motor
-        self.rightfront_IN1 = 23  # GPIO pin for front right motor forward
-        self.rightfront_IN2 = 24  # GPIO pin for front right motor backward
-        self.rightfront_ENA = 25  # PWM pin for front right motor speed control
+        self.rightfront_IN1 = 14  # GPIO pin for front right motor forward
+        self.rightfront_IN2 = 15  # GPIO pin for front right motor backward
+        self.rightfront_ENA = 12  # PWM pin for front right motor speed control
 
         # Back left motor
-        self.leftback_IN1 = 27  # GPIO pin for back left motor forward
-        self.leftback_IN2 = 22  # GPIO pin for back left motor backward
-        self.leftback_ENA = 17  # PWM pin for back left motor speed control
+        self.leftback_IN1 = 22  # GPIO pin for back left motor forward
+        self.leftback_IN2 = 23  # GPIO pin for back left motor backward
+        self.leftback_ENA = 19  # PWM pin for back left motor speed control
 
         # Back right motor
-        self.rightback_IN1 = 10  # GPIO pin for back right motor forward
-        self.rightback_IN2 = 9  # GPIO pin for back right motor backward
-        self.rightback_ENA = 11  # PWM pin for back right motor speed control
+        self.rightback_IN1 = 5  # GPIO pin for back right motor forward
+        self.rightback_IN2 = 6  # GPIO pin for back right motor backward
+        self.rightback_ENA = 18  # PWM pin for back right motor speed control
 
         # Set up the front and back motors on both sides with PWM speed control
         self.leftfront_motor_forward = OutputDevice(self.leftfront_IN1)
