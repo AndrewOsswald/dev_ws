@@ -2,6 +2,7 @@ import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from gpiozero import OutputDevice, PWMOutputDevice
+from time import time
 
 class MotorController(Node):
     def __init__(self):
@@ -9,26 +10,26 @@ class MotorController(Node):
 
         # Define GPIO pins for front and rear motors on both sides
         # Front left motor
-        self.leftfront_IN1 = 17  # GPIO pin for front left motor forward
-        self.leftfront_IN2 = 27  # GPIO pin for front left motor backward
-        self.leftfront_ENA = 13  # PWM pin for front left motor speed control
+        self.leftfront_IN1 = 17
+        self.leftfront_IN2 = 27
+        self.leftfront_ENA = 13
 
         # Front right motor
-        self.rightfront_IN1 = 14  # GPIO pin for front right motor forward
-        self.rightfront_IN2 = 15  # GPIO pin for front right motor backward
-        self.rightfront_ENA = 12  # PWM pin for front right motor speed control
+        self.rightfront_IN1 = 14
+        self.rightfront_IN2 = 15
+        self.rightfront_ENA = 12
 
         # Back left motor
-        self.leftback_IN1 = 22  # GPIO pin for back left motor forward
-        self.leftback_IN2 = 23  # GPIO pin for back left motor backward
-        self.leftback_ENA = 19  # PWM pin for back left motor speed control
+        self.leftback_IN1 = 22
+        self.leftback_IN2 = 23
+        self.leftback_ENA = 19
 
         # Back right motor
-        self.rightback_IN1 = 5  # GPIO pin for back right motor forward
-        self.rightback_IN2 = 6  # GPIO pin for back right motor backward
-        self.rightback_ENA = 18  # PWM pin for back right motor speed control
+        self.rightback_IN1 = 5
+        self.rightback_IN2 = 6
+        self.rightback_ENA = 18
 
-        # Set up the front and back motors on both sides with PWM speed control
+        # Set up the motor control and PWM instances
         self.leftfront_motor_forward = OutputDevice(self.leftfront_IN1)
         self.leftfront_motor_backward = OutputDevice(self.leftfront_IN2)
         self.leftfront_pwm = PWMOutputDevice(self.leftfront_ENA)
@@ -45,105 +46,98 @@ class MotorController(Node):
         self.rightback_motor_backward = OutputDevice(self.rightback_IN2)
         self.rightback_pwm = PWMOutputDevice(self.rightback_ENA)
 
+        # Motor target and current speeds
+        self.target_left_speed = 0
+        self.target_right_speed = 0
+        self.current_left_speed = 0
+        self.current_right_speed = 0
+
+        # Smoothing parameters
+        self.ramp_rate_high = 0.05  # High speed ramp rate
+        self.ramp_rate_low = 0.01  # Low speed ramp rate for speeds below 25%
+
+        # Timer for stopping motors on timeout
+        self.last_cmd_time = time()
+        self.timeout_duration = 0.5  # Stop if no new cmd_vel received in 0.5 seconds
+
         # Create a subscriber to the /cmd_vel topic
         self.subscription = self.create_subscription(
             Twist,
             '/cmd_vel',
             self.cmd_vel_callback,
-            10)  # Queue size
+            10)
+
+        # Timer to continuously update motor speeds for smoothing
+        self.timer = self.create_timer(0.1, self.update_motor_speeds)
 
     def cmd_vel_callback(self, msg):
-        # Extract linear and angular velocities
-        linear_velocity = msg.linear.x  # Forward/backward speed
-        angular_velocity = msg.angular.z  # Turning speed (rotation)
+        # Record the time of the latest command
+        self.last_cmd_time = time()
 
-        # Differential drive logic
-        left_speed, right_speed = self.calculate_motor_speeds(linear_velocity, angular_velocity)
+        # Calculate the target speeds for each side based on linear and angular velocities
+        linear_velocity = msg.linear.x
+        angular_velocity = msg.angular.z
 
-        # Stop motors if both velocities are zero
-        if linear_velocity == 0 and angular_velocity == 0:
-            self.stop_motors()
-        else:
-            # Set motor speeds and directions for left motors
-            if left_speed >= 0:
-                self.set_motor(self.leftfront_motor_forward, self.leftfront_motor_backward, self.leftfront_pwm, 'forward', left_speed)
-                self.set_motor(self.leftback_motor_forward, self.leftback_motor_backward, self.leftback_pwm, 'forward', left_speed)
-            else:
-                self.set_motor(self.leftfront_motor_forward, self.leftfront_motor_backward, self.leftfront_pwm, 'backward', abs(left_speed))
-                self.set_motor(self.leftback_motor_forward, self.leftback_motor_backward, self.leftback_pwm, 'backward', abs(left_speed))
-
-            # Set motor speeds and directions for right motors
-            if right_speed >= 0:
-                self.set_motor(self.rightfront_motor_forward, self.rightfront_motor_backward, self.rightfront_pwm, 'forward', right_speed)
-                self.set_motor(self.rightback_motor_forward, self.rightback_motor_backward, self.rightback_pwm, 'forward', right_speed)
-            else:
-                self.set_motor(self.rightfront_motor_forward, self.rightfront_motor_backward, self.rightfront_pwm, 'backward', abs(right_speed))
-                self.set_motor(self.rightback_motor_forward, self.rightback_motor_backward, self.rightback_pwm, 'backward', abs(right_speed))
+        self.target_left_speed, self.target_right_speed = self.calculate_motor_speeds(linear_velocity, angular_velocity)
 
     def calculate_motor_speeds(self, linear_velocity, angular_velocity):
-        """
-        Calculate the speeds for the left and right motors based on linear and angular velocities.
-        """
-
-        # Adjust for turning. Angular velocity adjusts the speed difference between the wheels.
+        max_linear_speed = 1.5
         left_speed = linear_velocity - angular_velocity
         right_speed = linear_velocity + angular_velocity
 
-        # Normalize the speeds based on maximum possible linear and angular values
-        max_linear_speed = 1.5  # Assuming 1.5 is 100% forward/backward speed
-        max_angular_speed = 1.0  # Full turning speed
-    
-        # Scale motor speeds to ensure values are within the valid range (-1 to 1)
-        left_speed = max(-1, min(1, left_speed / max_linear_speed))
-        right_speed = max(-1, min(1, right_speed / max_linear_speed))
+        left_speed = max(-1, min(1, left_speed / max_linear_speed)) * 100
+        right_speed = max(-1, min(1, right_speed / max_linear_speed)) * 100
 
-        return left_speed * 100, right_speed * 100  # Return as percentage
+        return left_speed, right_speed
 
-    def set_motor(self, forward_pin, backward_pin, pwm, direction, speed):
-        """
-        Set motor direction and speed.
-        :param forward_pin: GPIO pin for forward direction
-        :param backward_pin: GPIO pin for backward direction
-        :param pwm: PWM instance for the motor
-        :param direction: 'forward' or 'backward'
-        :param speed: Speed of the motor (0-100%)
-        """
-        # Clamp speed between 0 and 100
-        speed = max(0, min(100, speed))
+    def update_motor_speeds(self):
+        # Stop motors if no command has been received recently
+        if time() - self.last_cmd_time > self.timeout_duration:
+            self.target_left_speed = 0
+            self.target_right_speed = 0
+
+        # Smoothly adjust current speeds toward the target speeds
+        self.current_left_speed = self.ramp_toward_target(self.current_left_speed, self.target_left_speed)
+        self.current_right_speed = self.ramp_toward_target(self.current_right_speed, self.target_right_speed)
+
+        # Apply the calculated speeds to the motors
+        self.set_motor_speed(self.leftfront_motor_forward, self.leftfront_motor_backward, self.leftfront_pwm, self.current_left_speed)
+        self.set_motor_speed(self.leftback_motor_forward, self.leftback_motor_backward, self.leftback_pwm, self.current_left_speed)
+        self.set_motor_speed(self.rightfront_motor_forward, self.rightfront_motor_backward, self.rightfront_pwm, self.current_right_speed)
+        self.set_motor_speed(self.rightback_motor_forward, self.rightback_motor_backward, self.rightback_pwm, self.current_right_speed)
+
+    def ramp_toward_target(self, current_speed, target_speed):
+        # Choose ramp rate based on current speed level
+        ramp_rate = self.ramp_rate_low if abs(current_speed) < 25 else self.ramp_rate_high
+
+        # Ramp up or down towards the target speed
+        if current_speed < target_speed:
+            return min(current_speed + ramp_rate * 100, target_speed)
+        elif current_speed > target_speed:
+            return max(current_speed - ramp_rate * 100, target_speed)
+        else:
+            return target_speed
+
+    def set_motor_speed(self, forward_pin, backward_pin, pwm, speed):
+        # Ensure speed is within 0-100 for PWM
+        abs_speed = min(100, abs(speed))
+        direction = 'forward' if speed >= 0 else 'backward'
 
         if direction == 'forward':
             forward_pin.on()
             backward_pin.off()
-        elif direction == 'backward':
+        else:
             forward_pin.off()
             backward_pin.on()
 
-        # Set speed (convert to range 0.0 to 1.0 for gpiozero PWM)
-        pwm.value = speed / 100.0
-        self.get_logger().info(f'Motor {direction} at {speed}% speed')
+        pwm.value = abs_speed / 100.0
+        self.get_logger().info(f'Motor {direction} at {abs_speed}% speed')
 
     def stop_motors(self):
-        """Stop all motors."""
-        # Stop left front motors
-        self.leftfront_motor_forward.off()
-        self.leftfront_motor_backward.off()
-        self.leftfront_pwm.value = 0
-
-        # Stop right front motors
-        self.rightfront_motor_forward.off()
-        self.rightfront_motor_backward.off()
-        self.rightfront_pwm.value = 0
-
-        # Stop left back motors
-        self.leftback_motor_forward.off()
-        self.leftback_motor_backward.off()
-        self.leftback_pwm.value = 0
-
-        # Stop right back motors
-        self.rightback_motor_forward.off()
-        self.rightback_motor_backward.off()
-        self.rightback_pwm.value = 0
-
+        self.set_motor_speed(self.leftfront_motor_forward, self.leftfront_motor_backward, self.leftfront_pwm, 0)
+        self.set_motor_speed(self.leftback_motor_forward, self.leftback_motor_backward, self.leftback_pwm, 0)
+        self.set_motor_speed(self.rightfront_motor_forward, self.rightfront_motor_backward, self.rightfront_pwm, 0)
+        self.set_motor_speed(self.rightback_motor_forward, self.rightback_motor_backward, self.rightback_pwm, 0)
         self.get_logger().info('All motors stopped')
 
 def main(args=None):
