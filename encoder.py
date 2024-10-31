@@ -35,7 +35,8 @@ def select_channel(channel):
         else:
             print("Invalid channel number")
     except Exception as e:
-        print(f"Error selecting channel {channel} on multiplexer: {e}")
+        #print(f"Error selecting channel {channel} on multiplexer: {e}")
+        return None
 
 def read_encoder():
     try:
@@ -43,7 +44,7 @@ def read_encoder():
         encoder_value = encoder_data[0] << 8 | encoder_data[1]
         return encoder_value
     except IOError as e:
-        print(f"Error reading from encoder: {e}")
+        #print(f"Error reading from encoder: {e}")
         return None
 
 def calculate_angle(value):
