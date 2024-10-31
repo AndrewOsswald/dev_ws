@@ -64,6 +64,7 @@ while True:
         current_position = read_encoder()
         if current_position is None:
             output.append(f"{wheel.capitalize()}: Error reading encoder. Skipping this cycle.")
+            output.append(f" ")
             time.sleep(update_interval)
             continue
 
@@ -109,8 +110,10 @@ while True:
 
         except ZeroDivisionError:
             output.append(f"{wheel.capitalize()}: Time delta was too small for velocity calculation. Skipping this cycle.")
+            output.append(f" ")
         except Exception as e:
             output.append(f"{wheel.capitalize()}: Error calculating velocity: {e}")
+            output.append(f" ")
 
     # Print all output for this cycle at once
     print("\n".join(output))
