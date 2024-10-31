@@ -17,7 +17,7 @@ wheel_circumference_in = math.pi * wheel_diameter_in  # Circumference in inches
 
 # Define channels for each wheel
 channels = {
-    "front_left": 0,
+    "front_left": 7,
     "front_right": 1,
     "back_left": 2,
     "back_right": 3
