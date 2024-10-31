@@ -54,6 +54,8 @@ previous_positions = {wheel: read_encoder() or 0 for wheel in channels}
 previous_times = {wheel: time.time() for wheel in channels}
 
 while True:
+    output = []  # List to store output strings for each wheel
+
     for wheel, channel in channels.items():
         # Select the appropriate channel on the multiplexer
         select_channel(channel)
@@ -61,7 +63,7 @@ while True:
         # Read the current position
         current_position = read_encoder()
         if current_position is None:
-            print(f"Error reading encoder for {wheel}. Skipping this cycle.")
+            output.append(f"{wheel.capitalize()}: Error reading encoder. Skipping this cycle.")
             time.sleep(update_interval)
             continue
 
@@ -97,17 +99,20 @@ while True:
             average_velocity_in_per_sec = sum(velocity_samples[wheel]) / len(velocity_samples[wheel])
             average_velocity_mph = average_velocity_in_per_sec * 0.0568182
 
-            # Print the current angle and averaged linear velocity of the wheel
-            print(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
-            print(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
+            # Store formatted output for the wheel
+            output.append(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
+            output.append(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
 
             # Update previous position and time for next loop
             previous_positions[wheel] = current_position
             previous_times[wheel] = current_time
 
         except ZeroDivisionError:
-            print(f"Time delta was too small for velocity calculation for {wheel}. Skipping this cycle.")
+            output.append(f"{wheel.capitalize()}: Time delta was too small for velocity calculation. Skipping this cycle.")
         except Exception as e:
-            print(f"Error calculating velocity for {wheel}: {e}")
+            output.append(f"{wheel.capitalize()}: Error calculating velocity: {e}")
+
+    # Print all output for this cycle at once
+    print("\n".join(output))
 
     time.sleep(update_interval)
