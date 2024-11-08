@@ -36,6 +36,7 @@ def select_channel(channel):
             print("Invalid channel number")
     except Exception as e:
        # print(f"Error selecting channel {channel} on multiplexer: {e}")
+       return None
 
 def read_encoder():
     try:
