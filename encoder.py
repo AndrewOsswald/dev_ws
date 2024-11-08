@@ -11,7 +11,7 @@ encoder_address = 0x36      # Address of the AS5600 encoder
 
 # Encoder and wheel characteristics
 max_encoder_value = 4096          # The AS5600 provides a 12-bit angle measurement (0–4095)
-update_interval = 0.001           # Adjusted time interval (in seconds) to check for velocity
+update_interval = 0.01            # Increased time interval (in seconds) to check for velocity
 wheel_diameter_in = 8             # Diameter of the wheel in inches
 wheel_circumference_in = math.pi * wheel_diameter_in  # Circumference in inches
 
@@ -35,8 +35,7 @@ def select_channel(channel):
         else:
             print("Invalid channel number")
     except Exception as e:
-        #print(f"Error selecting channel {channel} on multiplexer: {e}")
-        return None
+        print(f"Error selecting channel {channel} on multiplexer: {e}")
 
 def read_encoder():
     try:
@@ -44,7 +43,7 @@ def read_encoder():
         encoder_value = encoder_data[0] << 8 | encoder_data[1]
         return encoder_value
     except IOError as e:
-        #print(f"Error reading from encoder: {e}")
+        print(f"Error reading from encoder: {e}")
         return None
 
 def calculate_angle(value):
@@ -55,7 +54,7 @@ previous_positions = {wheel: read_encoder() or 0 for wheel in channels}
 previous_times = {wheel: time.time() for wheel in channels}
 
 while True:
-    output = []  # List to store output strings for each wheel
+    output_data = []
 
     for wheel, channel in channels.items():
         # Select the appropriate channel on the multiplexer
@@ -64,8 +63,7 @@ while True:
         # Read the current position
         current_position = read_encoder()
         if current_position is None:
-            output.append(f"{wheel.capitalize()}: Error reading encoder. Skipping this cycle.")
-            output.append(f" ")
+            print(f"Error reading encoder for {wheel}. Skipping this cycle.")
             time.sleep(update_interval)
             continue
 
@@ -101,22 +99,21 @@ while True:
             average_velocity_in_per_sec = sum(velocity_samples[wheel]) / len(velocity_samples[wheel])
             average_velocity_mph = average_velocity_in_per_sec * 0.0568182
 
-            # Store formatted output for the wheel
-            output.append(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
-            output.append(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
+            # Append output for current wheel
+            output_data.append(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
+            output_data.append(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
 
             # Update previous position and time for next loop
             previous_positions[wheel] = current_position
             previous_times[wheel] = current_time
 
         except ZeroDivisionError:
-            output.append(f"{wheel.capitalize()}: Time delta was too small for velocity calculation. Skipping this cycle.")
-            output.append(f" ")
+            print(f"Time delta was too small for velocity calculation for {wheel}. Skipping this cycle.")
         except Exception as e:
-            output.append(f"{wheel.capitalize()}: Error calculating velocity: {e}")
-            output.append(f" ")
+            print(f"Error calculating velocity for {wheel}: {e}")
 
-    # Print all output for this cycle at once
-    print("\n".join(output))
+    # Print all wheel outputs at once
+    print("\n".join(output_data))
+    print("-" * 40)
 
     time.sleep(update_interval)
