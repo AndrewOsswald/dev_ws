@@ -35,7 +35,7 @@ def select_channel(channel):
         else:
             print("Invalid channel number")
     except Exception as e:
-        print(f"Error selecting channel {channel} on multiplexer: {e}")
+       # print(f"Error selecting channel {channel} on multiplexer: {e}")
 
 def read_encoder():
     try:
@@ -43,7 +43,7 @@ def read_encoder():
         encoder_value = encoder_data[0] << 8 | encoder_data[1]
         return encoder_value
     except IOError as e:
-        print(f"Error reading from encoder: {e}")
+        #print(f"Error reading from encoder: {e}")
         return None
 
 def calculate_angle(value):
@@ -63,7 +63,7 @@ while True:
         # Read the current position
         current_position = read_encoder()
         if current_position is None:
-            print(f"Error reading encoder for {wheel}. Skipping this cycle.")
+            #print(f"Error reading encoder for {wheel}. Skipping this cycle.")
             time.sleep(update_interval)
             continue
 
@@ -108,9 +108,9 @@ while True:
             previous_times[wheel] = current_time
 
         except ZeroDivisionError:
-            print(f"Time delta was too small for velocity calculation for {wheel}. Skipping this cycle.")
+            #print(f"Time delta was too small for velocity calculation for {wheel}. Skipping this cycle.")
         except Exception as e:
-            print(f"Error calculating velocity for {wheel}: {e}")
+            #print(f"Error calculating velocity for {wheel}: {e}")
 
     # Print all wheel outputs at once
     print("\n".join(output_data))
