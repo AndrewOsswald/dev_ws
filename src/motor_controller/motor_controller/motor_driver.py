@@ -53,8 +53,8 @@ class MotorController(Node):
         self.current_right_speed = 0
 
         # Smoothing parameters
-        self.ramp_rate_high = 0.05  # High speed ramp rate
-        self.ramp_rate_low = 0.01  # Low speed ramp rate for speeds below 25%
+        self.ramp_rate_high = 0.10  # High speed ramp rate
+        self.ramp_rate_low = 0.02  # Low speed ramp rate for speeds below 25%
 
         # Timer for stopping motors on timeout
         self.last_cmd_time = time()
