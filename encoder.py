@@ -11,7 +11,7 @@ encoder_address = 0x36      # Address of the AS5600 encoder
 
 # Encoder and wheel characteristics
 max_encoder_value = 4096          # The AS5600 provides a 12-bit angle measurement (0–4095)
-update_interval = 0.01            # Increased time interval (in seconds) to check for velocity
+update_interval = 0.001           # Adjusted time interval (in seconds) to check for velocity
 wheel_diameter_in = 8             # Diameter of the wheel in inches
 wheel_circumference_in = math.pi * wheel_diameter_in  # Circumference in inches
 
@@ -35,8 +35,8 @@ def select_channel(channel):
         else:
             print("Invalid channel number")
     except Exception as e:
-       # print(f"Error selecting channel {channel} on multiplexer: {e}")
-       return None
+        #print(f"Error selecting channel {channel} on multiplexer: {e}")
+        return None
 
 def read_encoder():
     try:
@@ -55,7 +55,7 @@ previous_positions = {wheel: read_encoder() or 0 for wheel in channels}
 previous_times = {wheel: time.time() for wheel in channels}
 
 while True:
-    output_data = []
+    output = []  # List to store output strings for each wheel
 
     for wheel, channel in channels.items():
         # Select the appropriate channel on the multiplexer
@@ -64,7 +64,8 @@ while True:
         # Read the current position
         current_position = read_encoder()
         if current_position is None:
-            #print(f"Error reading encoder for {wheel}. Skipping this cycle.")
+            output.append(f"{wheel.capitalize()}: Error reading encoder. Skipping this cycle.")
+            output.append(f" ")
             time.sleep(update_interval)
             continue
 
@@ -75,44 +76,47 @@ while True:
         current_angle = calculate_angle(current_position)
 
         # Calculate velocity (change in position over time)
-        
-        delta_position = current_position - previous_positions[wheel]
-        delta_time = current_time - previous_times[wheel]
+        try:
+            delta_position = current_position - previous_positions[wheel]
+            delta_time = current_time - previous_times[wheel]
 
-        # Handle wrap-around effect for encoder readings
-        if delta_position > max_encoder_value / 2:
-            delta_position -= max_encoder_value
-        elif delta_position < -max_encoder_value / 2:
-            delta_position += max_encoder_value
+            # Handle wrap-around effect for encoder readings
+            if delta_position > max_encoder_value / 2:
+                delta_position -= max_encoder_value
+            elif delta_position < -max_encoder_value / 2:
+                delta_position += max_encoder_value
 
-        # Calculate velocity in degrees per second
-        velocity_deg_per_sec = (delta_position / delta_time) * (360 / max_encoder_value)
+            # Calculate velocity in degrees per second
+            velocity_deg_per_sec = (delta_position / delta_time) * (360 / max_encoder_value)
 
-        # Convert angular velocity to linear velocity in inches per second
-        linear_velocity_in_per_sec = (velocity_deg_per_sec / 360) * wheel_circumference_in
+            # Convert angular velocity to linear velocity in inches per second
+            linear_velocity_in_per_sec = (velocity_deg_per_sec / 360) * wheel_circumference_in
 
-        # Add the current velocity to the samples for averaging
-        velocity_samples[wheel].append(linear_velocity_in_per_sec)
-        if len(velocity_samples[wheel]) > average_window_size:
-            velocity_samples[wheel].pop(0)
+            # Add the current velocity to the samples for averaging
+            velocity_samples[wheel].append(linear_velocity_in_per_sec)
+            if len(velocity_samples[wheel]) > average_window_size:
+                velocity_samples[wheel].pop(0)
 
-        # Calculate the average velocity over the sample window
-        average_velocity_in_per_sec = sum(velocity_samples[wheel]) / len(velocity_samples[wheel])
-        average_velocity_mph = average_velocity_in_per_sec * 0.0568182
+            # Calculate the average velocity over the sample window
+            average_velocity_in_per_sec = sum(velocity_samples[wheel]) / len(velocity_samples[wheel])
+            average_velocity_mph = average_velocity_in_per_sec * 0.0568182
 
-        # Append output for current wheel
-        output_data.append(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
-        output_data.append(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
+            # Store formatted output for the wheel
+            output.append(f"{wheel.capitalize()} Encoder Direction: {current_angle:.2f}°")
+            output.append(f"{wheel.capitalize()} Averaged Wheel Linear Velocity: {average_velocity_mph:.2f} mph")
 
-        # Update previous position and time for next loop
-        previous_positions[wheel] = current_position
-        previous_times[wheel] = current_time
+            # Update previous position and time for next loop
+            previous_positions[wheel] = current_position
+            previous_times[wheel] = current_time
 
-        
-            
+        except ZeroDivisionError:
+            output.append(f"{wheel.capitalize()}: Time delta was too small for velocity calculation. Skipping this cycle.")
+            output.append(f" ")
+        except Exception as e:
+            output.append(f"{wheel.capitalize()}: Error calculating velocity: {e}")
+            output.append(f" ")
 
-    # Print all wheel outputs at once
-    print("\n".join(output_data))
-    print("-" * 40)
+    # Print all output for this cycle at once
+    print("\n".join(output))
 
     time.sleep(update_interval)
