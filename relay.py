@@ -10,7 +10,7 @@ pin_9.on()
 pin_10.on()
 
 # Keep the signal active for 5 seconds
-sleep(5)
+sleep(100)
 
 # Turn off both pins
 pin_9.off()
