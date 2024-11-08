@@ -11,7 +11,7 @@ encoder_address = 0x36      # Address of the AS5600 encoder
 
 # Encoder and wheel characteristics
 max_encoder_value = 4096          # The AS5600 provides a 12-bit angle measurement (0–4095)
-update_interval = 0.001           # Adjusted time interval (in seconds) to check for velocity
+update_interval = 0.01            # Increased time interval to help stabilize readings
 wheel_diameter_in = 8             # Diameter of the wheel in inches
 wheel_circumference_in = math.pi * wheel_diameter_in  # Circumference in inches
 
@@ -26,12 +26,14 @@ channels = {
 # Moving average window size for smoothing
 average_window_size = 250
 velocity_samples = {wheel: [] for wheel in channels}
+stable_threshold = 2  # Threshold for changes to ignore as noise when stationary
 
 # Functions
 def select_channel(channel):
     try:
         if 0 <= channel <= 7:
             bus.write_byte(multiplexer_address, 1 << channel)
+            time.sleep(0.001)  # Small delay to allow for stable channel selection
         else:
             print("Invalid channel number")
     except Exception as e:
@@ -86,8 +88,12 @@ while True:
             elif delta_position < -max_encoder_value / 2:
                 delta_position += max_encoder_value
 
-            # Calculate velocity in degrees per second
-            velocity_deg_per_sec = (delta_position / delta_time) * (360 / max_encoder_value)
+            # Ignore tiny changes when stationary
+            if abs(delta_position) < stable_threshold:
+                delta_position = 0
+
+            # Calculate velocity in degrees per second if delta_time > 0
+            velocity_deg_per_sec = (delta_position / delta_time) * (360 / max_encoder_value) if delta_time > 0 else 0
 
             # Convert angular velocity to linear velocity in inches per second
             linear_velocity_in_per_sec = (velocity_deg_per_sec / 360) * wheel_circumference_in
@@ -118,5 +124,6 @@ while True:
 
     # Print all output for this cycle at once
     print("\n".join(output))
+    print("-" * 40)
 
     time.sleep(update_interval)
