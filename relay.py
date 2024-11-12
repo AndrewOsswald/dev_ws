@@ -1,26 +1,26 @@
 from gpiozero import LED
 
-# Set up pins 9 and 10 as outputs
+# Set up pin 10 as output
 pin_10 = LED(10)
 
 while True:
     # Get command from the console
-    command = input("Enter 'on' to turn on the pins, 'off' to turn them off, or 'exit' to quit: ").strip().lower()
+    command = input("Enter 'on' to turn on the pin, 'off' to turn them off, or 'exit' to quit: ").strip().lower()
 
     if command == "on":
-        # Turn on both pins
+        # Turn on pin 10
         pin_10.on()
-        print("Pins 9 and 10 are now ON.")
+        print("Pins 10 is now ON.")
         
     elif command == "off":
-        # Turn off both pins
+        # Turn off pin 10
         pin_10.off()
-        print("Pins 9 and 10 are now OFF.")
+        print("Pin 10 is now OFF.")
         
     elif command == "exit":
-        # Turn off pins and exit the program
+        # Turn off pin
         pin_10.off()
-        print("Exiting program and turning off pins.")
+        print("Exiting program and turning off pin.")
         break
     
     else:
