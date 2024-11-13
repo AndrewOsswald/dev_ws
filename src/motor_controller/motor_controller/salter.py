@@ -14,6 +14,10 @@ class Salter(Node):
         self.speed_levels = [0.0, 0.3, 0.6, 1.0]  # Off, slow, medium, fast
         self.current_speed_index = 0  # Start at 'off'
 
+        # Track previous button states to detect single presses
+        self.prev_up_button_state = 0.0
+        self.prev_down_button_state = 0.0
+
         # Update PWM to initial speed
         self.update_pwm()
 
@@ -27,16 +31,22 @@ class Salter(Node):
         self.get_logger().info('Salter node has been started, listening to /joy topic...')
 
     def joy_callback(self, msg):
-        # Check the 8th element in the axes array (index 7)
+        # Check the 8th element in the axes array (index 7) for up and down button states
         if len(msg.axes) > 7:
-            axis_value = msg.axes[7]
+            up_button_state = msg.axes[7] == 1.0
+            down_button_state = msg.axes[7] == -1.0
 
-            # Increase speed if the axis value is 1.0 (up button)
-            if axis_value == 1.0:
+            # Increase speed on a single press of the "up" button
+            if up_button_state and not self.prev_up_button_state:
                 self.increase_speed()
-            # Decrease speed if the axis value is -1.0 (down button)
-            elif axis_value == -1.0:
+
+            # Decrease speed on a single press of the "down" button
+            if down_button_state and not self.prev_down_button_state:
                 self.decrease_speed()
+
+            # Update previous button states
+            self.prev_up_button_state = up_button_state
+            self.prev_down_button_state = down_button_state
 
     def increase_speed(self):
         # Only increase speed if we haven't reached the max speed
@@ -76,3 +86,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
