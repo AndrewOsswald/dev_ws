@@ -11,7 +11,7 @@ class Salter(Node):
         self.salter_pwm = PWMLED(9)
 
         # Define PWM duty cycle settings for each speed level
-        self.speed_levels = [0.0, 0.3, 0.6, 1.0]  # Off, slow, medium, fast
+        self.speed_levels = [0.0, 0.1, 0.2, .3]  # Off, slow, medium, fast
         self.current_speed_index = 0  # Start at 'off'
 
         # Track previous button states to detect single presses
