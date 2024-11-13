@@ -10,17 +10,12 @@ class Salter(Node):
         # Set up PWM pin 9 for controlling the salter
         self.salter_pwm = PWMLED(9)
 
-        # PWM duty cycle settings for each speed
-        self.speeds = {
-            'off': 0.0,
-            'slow': 0.1,
-            'medium': 0.2,
-            'fast': 0.3
-        }
+        # Define PWM duty cycle settings for each speed level
+        self.speed_levels = [0.0, 0.3, 0.6, 1.0]  # Off, slow, medium, fast
+        self.current_speed_index = 0  # Start at 'off'
 
-        # Initialize speed to 'off'
-        self.current_speed = 'off'
-        self.update_pwm(self.current_speed)
+        # Update PWM to initial speed
+        self.update_pwm()
 
         # Subscribe to the /joy topic
         self.subscription = self.create_subscription(
@@ -36,27 +31,38 @@ class Salter(Node):
         if len(msg.axes) > 7:
             axis_value = msg.axes[7]
 
-            # Set speed based on the axis value
+            # Increase speed if the axis value is 1.0 (up button)
             if axis_value == 1.0:
-                self.set_speed('fast')
+                self.increase_speed()
+            # Decrease speed if the axis value is -1.0 (down button)
             elif axis_value == -1.0:
-                self.set_speed('slow')
-            else:
-                self.set_speed('off')
+                self.decrease_speed()
 
-    def set_speed(self, speed):
-        # Only update if the speed has changed
-        if speed != self.current_speed:
-            self.current_speed = speed
-            self.update_pwm(speed)
-            self.get_logger().info(f'Salter set to {speed} speed.')
+    def increase_speed(self):
+        # Only increase speed if we haven't reached the max speed
+        if self.current_speed_index < len(self.speed_levels) - 1:
+            self.current_speed_index += 1
+            self.update_pwm()
+            self.get_logger().info(f'Salter increased to {self.get_speed_label()} speed.')
 
-    def update_pwm(self, speed):
-        # Update the PWM duty cycle based on speed setting
-        self.salter_pwm.value = self.speeds[speed]
+    def decrease_speed(self):
+        # Only decrease speed if we're above the minimum speed (off)
+        if self.current_speed_index > 0:
+            self.current_speed_index -= 1
+            self.update_pwm()
+            self.get_logger().info(f'Salter decreased to {self.get_speed_label()} speed.')
+
+    def update_pwm(self):
+        # Update the PWM duty cycle based on the current speed index
+        self.salter_pwm.value = self.speed_levels[self.current_speed_index]
+
+    def get_speed_label(self):
+        # Helper function to get the current speed label
+        labels = ['off', 'slow', 'medium', 'fast']
+        return labels[self.current_speed_index]
 
     def stop_salter(self):
-        # Ensure salter is turned off when stopping
+        # Ensure the salter is turned off when stopping
         self.salter_pwm.off()
         self.get_logger().info('Salter stopped.')
 
