@@ -22,7 +22,7 @@ setup(
         'console_scripts': [
 
             'controller = motor_controller.motor_driver:main',
-            'relay = motor_controller.RelayController:main',
+            'relay = motor_controller.relay:main',
         ],
     },
 )
