@@ -10,6 +10,8 @@ setup.py
 ../../build/motor_controller/motor_controller.egg-info/zip-safe
 motor_controller/__init__.py
 motor_controller/motor_driver.py
+motor_controller/relay.py
+motor_controller/salter.py
 motor_controller.egg-info/PKG-INFO
 motor_controller.egg-info/SOURCES.txt
 motor_controller.egg-info/dependency_links.txt
