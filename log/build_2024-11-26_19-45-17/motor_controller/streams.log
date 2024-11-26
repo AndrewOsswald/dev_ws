@@ -1,0 +1,20 @@
+[8.167s] Invoking command in '/home/ubuntu/dev_ws/build/motor_controller': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data
+[10.914s] running develop
+[12.661s] running egg_info
+[12.662s] writing motor_controller.egg-info/PKG-INFO
+[12.665s] writing dependency_links to motor_controller.egg-info/dependency_links.txt
+[12.667s] writing entry points to motor_controller.egg-info/entry_points.txt
+[12.669s] writing requirements to motor_controller.egg-info/requires.txt
+[12.671s] writing top-level names to motor_controller.egg-info/top_level.txt
+[13.025s] reading manifest file 'motor_controller.egg-info/SOURCES.txt'
+[13.035s] writing manifest file 'motor_controller.egg-info/SOURCES.txt'
+[13.452s] running build_ext
+[13.457s] Creating /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor-controller.egg-link (link to .)
+[13.466s] Installing controller script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[13.468s] Installing estop script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[13.470s] Installing relay script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[13.472s] Installing salter script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[13.475s] 
+[13.477s] Installed /home/ubuntu/dev_ws/build/motor_controller
+[13.478s] running symlink_data
+[13.713s] Invoked command in '/home/ubuntu/dev_ws/build/motor_controller' returned '0': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data

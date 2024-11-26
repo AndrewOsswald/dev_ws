@@ -1,0 +1,24 @@
+[0.000000] (-) TimerEvent: {}
+[0.002305] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.004675] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.100906] (-) TimerEvent: {}
+[0.204655] (-) TimerEvent: {}
+[0.306719] (-) TimerEvent: {}
+[0.408306] (-) TimerEvent: {}
+[0.510101] (-) TimerEvent: {}
+[0.611624] (-) TimerEvent: {}
+[0.712995] (-) TimerEvent: {}
+[0.814477] (-) TimerEvent: {}
+[0.916033] (-) TimerEvent: {}
+[1.017472] (-) TimerEvent: {}
+[1.118883] (-) TimerEvent: {}
+[1.220308] (-) TimerEvent: {}
+[1.321862] (-) TimerEvent: {}
+[1.423323] (-) TimerEvent: {}
+[1.524753] (-) TimerEvent: {}
+[1.626435] (-) TimerEvent: {}
+[1.728129] (-) TimerEvent: {}
+[1.829536] (-) TimerEvent: {}
+[1.931136] (-) TimerEvent: {}
+[1.978781] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[1.988027] (-) EventReactorShutdown: {}

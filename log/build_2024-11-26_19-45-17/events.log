@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.002331] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.004701] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.099562] (-) TimerEvent: {}
+[0.203608] (-) TimerEvent: {}
+[0.305589] (-) TimerEvent: {}
+[0.407142] (-) TimerEvent: {}
+[0.508669] (-) TimerEvent: {}
+[0.610169] (-) TimerEvent: {}
+[0.711978] (-) TimerEvent: {}
+[0.813342] (-) TimerEvent: {}
+[0.914796] (-) TimerEvent: {}
+[1.016403] (-) TimerEvent: {}
+[1.119291] (-) TimerEvent: {}
+[1.220962] (-) TimerEvent: {}
+[1.322415] (-) TimerEvent: {}
+[1.423888] (-) TimerEvent: {}
+[1.525364] (-) TimerEvent: {}
+[1.626828] (-) TimerEvent: {}
+[1.728276] (-) TimerEvent: {}
+[1.829742] (-) TimerEvent: {}
+[1.931181] (-) TimerEvent: {}
+[2.032555] (-) TimerEvent: {}
+[2.133912] (-) TimerEvent: {}
+[2.235395] (-) TimerEvent: {}
+[2.336947] (-) TimerEvent: {}
+[2.438409] (-) TimerEvent: {}
+[2.539853] (-) TimerEvent: {}
+[2.641294] (-) TimerEvent: {}
+[2.742904] (-) TimerEvent: {}
+[2.846079] (-) TimerEvent: {}
+[2.949971] (-) TimerEvent: {}
+[3.052514] (-) TimerEvent: {}
+[3.154368] (-) TimerEvent: {}
+[3.256378] (-) TimerEvent: {}
+[3.358012] (-) TimerEvent: {}
+[3.459788] (-) TimerEvent: {}
+[3.561354] (-) TimerEvent: {}
+[3.663195] (-) TimerEvent: {}
+[3.765175] (-) TimerEvent: {}
+[3.866706] (-) TimerEvent: {}
+[3.969300] (-) TimerEvent: {}
+[4.070951] (-) TimerEvent: {}
+[4.172636] (-) TimerEvent: {}
+[4.274224] (-) TimerEvent: {}
+[4.375905] (-) TimerEvent: {}
+[4.477313] (-) TimerEvent: {}
+[4.578982] (-) TimerEvent: {}
+[4.681606] (-) TimerEvent: {}
+[4.783333] (-) TimerEvent: {}
+[4.884942] (-) TimerEvent: {}
+[4.987427] (-) TimerEvent: {}
+[5.088989] (-) TimerEvent: {}
+[5.190667] (-) TimerEvent: {}
+[5.292567] (-) TimerEvent: {}
+[5.394239] (-) TimerEvent: {}
+[5.496726] (-) TimerEvent: {}
+[5.598138] (-) TimerEvent: {}
+[5.699830] (-) TimerEvent: {}
+[5.802520] (-) TimerEvent: {}
+[5.905341] (-) TimerEvent: {}
+[6.008292] (-) TimerEvent: {}
+[6.110794] (-) TimerEvent: {}
+[6.212407] (-) TimerEvent: {}
+[6.315807] (-) TimerEvent: {}
+[6.417471] (-) TimerEvent: {}
+[6.518946] (-) TimerEvent: {}
+[6.620427] (-) TimerEvent: {}
+[6.722179] (-) TimerEvent: {}
+[6.824025] (-) TimerEvent: {}
+[6.934606] (-) TimerEvent: {}
+[7.039294] (-) TimerEvent: {}
+[7.143091] (-) TimerEvent: {}
+[7.244941] (-) TimerEvent: {}
+[7.346495] (-) TimerEvent: {}
+[7.447962] (-) TimerEvent: {}
+[7.549387] (-) TimerEvent: {}
+[7.650984] (-) TimerEvent: {}
+[7.752532] (-) TimerEvent: {}
+[7.853966] (-) TimerEvent: {}
+[7.955673] (-) TimerEvent: {}
+[8.058137] (-) TimerEvent: {}
+[8.160062] (-) TimerEvent: {}
+[8.162733] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/dev_ws/build/motor_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/dev_ws/build/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '172.20.10.3 49634 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib:/home/ubuntu/dev_ws/install/pigpio/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'OLDPWD': '/', 'TERM_PROGRAM_VERSION': '1.95.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-5f4ef966-925b-4ecf-833c-fc544ef6a251.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/bin:/home/ubuntu/dev_ws/install/pigpio/bin:/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bad9be1294.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/foxy:/home/ubuntu/dev_ws/install/py_pubsub:/home/ubuntu/dev_ws/install/motor_controller:/home/ubuntu/dev_ws/install/motor_control', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/dev_ws/build/motor_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.3 49634 172.20.10.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/dev_ws/build/motor_controller:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/dev_ws/install/pigpio:/home/ubuntu/dev_ws/install/motor_control'}, 'shell': False}
+[8.260489] (-) TimerEvent: {}
+[8.362448] (-) TimerEvent: {}
+[8.463817] (-) TimerEvent: {}
+[8.565369] (-) TimerEvent: {}
+[8.666856] (-) TimerEvent: {}
+[8.768581] (-) TimerEvent: {}
+[8.870255] (-) TimerEvent: {}
+[8.972241] (-) TimerEvent: {}
+[9.073846] (-) TimerEvent: {}
+[9.175347] (-) TimerEvent: {}
+[9.276893] (-) TimerEvent: {}
+[9.378453] (-) TimerEvent: {}
+[9.479831] (-) TimerEvent: {}
+[9.581392] (-) TimerEvent: {}
+[9.682911] (-) TimerEvent: {}
+[9.784316] (-) TimerEvent: {}
+[9.885734] (-) TimerEvent: {}
+[9.987451] (-) TimerEvent: {}
+[10.088940] (-) TimerEvent: {}
+[10.190481] (-) TimerEvent: {}
+[10.291824] (-) TimerEvent: {}
+[10.393401] (-) TimerEvent: {}
+[10.494923] (-) TimerEvent: {}
+[10.596870] (-) TimerEvent: {}
+[10.698245] (-) TimerEvent: {}
+[10.799920] (-) TimerEvent: {}
+[10.901515] (-) TimerEvent: {}
+[10.917733] (motor_controller) StdoutLine: {'line': b'running develop\n'}
+[11.001878] (-) TimerEvent: {}
+[11.103526] (-) TimerEvent: {}
+[11.205175] (-) TimerEvent: {}
+[11.307689] (-) TimerEvent: {}
+[11.409323] (-) TimerEvent: {}
+[11.510855] (-) TimerEvent: {}
+[11.612223] (-) TimerEvent: {}
+[11.713641] (-) TimerEvent: {}
+[11.815117] (-) TimerEvent: {}
+[11.916599] (-) TimerEvent: {}
+[12.018071] (-) TimerEvent: {}
+[12.119437] (-) TimerEvent: {}
+[12.220964] (-) TimerEvent: {}
+[12.322515] (-) TimerEvent: {}
+[12.423924] (-) TimerEvent: {}
+[12.525384] (-) TimerEvent: {}
+[12.626857] (-) TimerEvent: {}
+[12.665640] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[12.667346] (motor_controller) StdoutLine: {'line': b'writing motor_controller.egg-info/PKG-INFO\n'}
+[12.669686] (motor_controller) StdoutLine: {'line': b'writing dependency_links to motor_controller.egg-info/dependency_links.txt\n'}
+[12.672296] (motor_controller) StdoutLine: {'line': b'writing entry points to motor_controller.egg-info/entry_points.txt\n'}
+[12.674194] (motor_controller) StdoutLine: {'line': b'writing requirements to motor_controller.egg-info/requires.txt\n'}
+[12.675936] (motor_controller) StdoutLine: {'line': b'writing top-level names to motor_controller.egg-info/top_level.txt\n'}
+[12.727191] (-) TimerEvent: {}
+[12.828787] (-) TimerEvent: {}
+[12.930371] (-) TimerEvent: {}
+[13.029528] (motor_controller) StdoutLine: {'line': b"reading manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[13.031073] (-) TimerEvent: {}
+[13.039893] (motor_controller) StdoutLine: {'line': b"writing manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[13.131358] (-) TimerEvent: {}
+[13.232738] (-) TimerEvent: {}
+[13.334217] (-) TimerEvent: {}
+[13.435726] (-) TimerEvent: {}
+[13.457125] (motor_controller) StdoutLine: {'line': b'running build_ext\n'}
+[13.461627] (motor_controller) StdoutLine: {'line': b'Creating /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor-controller.egg-link (link to .)\n'}
+[13.470944] (motor_controller) StdoutLine: {'line': b'Installing controller script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[13.473170] (motor_controller) StdoutLine: {'line': b'Installing estop script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[13.475142] (motor_controller) StdoutLine: {'line': b'Installing relay script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[13.476849] (motor_controller) StdoutLine: {'line': b'Installing salter script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[13.479718] (motor_controller) StdoutLine: {'line': b'\n'}
+[13.481721] (motor_controller) StdoutLine: {'line': b'Installed /home/ubuntu/dev_ws/build/motor_controller\n'}
+[13.483032] (motor_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[13.536148] (-) TimerEvent: {}
+[13.638469] (-) TimerEvent: {}
+[13.712802] (motor_controller) CommandEnded: {'returncode': 0}
+[13.739487] (-) TimerEvent: {}
+[13.843643] (-) TimerEvent: {}
+[13.871547] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[13.878694] (-) EventReactorShutdown: {}
