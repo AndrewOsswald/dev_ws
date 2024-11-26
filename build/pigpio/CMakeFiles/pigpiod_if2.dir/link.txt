@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libpigpiod_if2.so -o libpigpiod_if2.so CMakeFiles/pigpiod_if2.dir/pigpiod_if2.c.o CMakeFiles/pigpiod_if2.dir/command.c.o 

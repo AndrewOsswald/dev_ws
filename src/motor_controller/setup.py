@@ -24,6 +24,7 @@ setup(
             'controller = motor_controller.motor_driver:main',
             'relay = motor_controller.relay:main',
             'salter = motor_controller.salter:main',
+            'estop = motor_controller.estop:main',
         ],
     },
 )

@@ -1,0 +1,4 @@
+Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake /home/ubuntu/dev_ws/pigpio-master -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/pigpio
+Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake /home/ubuntu/dev_ws/pigpio-master -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/pigpio
+Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '-2': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4

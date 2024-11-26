@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pig2vcd.dir/pig2vcd.c.o CMakeFiles/pig2vcd.dir/command.c.o  -o pig2vcd  -lpthread 

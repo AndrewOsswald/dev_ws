@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/x_pigpiod_if2.dir/x_pigpiod_if2.c.o  -o x_pigpiod_if2  -Wl,-rpath,/home/ubuntu/dev_ws/build/pigpio libpigpiod_if2.so -lrt -lpthread 

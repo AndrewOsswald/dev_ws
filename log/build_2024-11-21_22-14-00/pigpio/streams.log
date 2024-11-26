@@ -1,0 +1,35 @@
+[3.814s] Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake /home/ubuntu/dev_ws/pigpio-master -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/pigpio
+[5.687s] -- The C compiler identification is GNU 9.4.0
+[5.823s] -- Check for working C compiler: /usr/bin/cc
+[7.280s] -- Check for working C compiler: /usr/bin/cc -- works
+[7.307s] -- Detecting C compiler ABI info
+[8.610s] -- Detecting C compiler ABI info - done
+[8.840s] -- Detecting C compile features
+[8.848s] -- Detecting C compile features - done
+[8.895s] -- Looking for pthread.h
+[10.237s] -- Looking for pthread.h - found
+[10.254s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[12.107s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[12.118s] -- Looking for pthread_create in pthreads
+[13.264s] -- Looking for pthread_create in pthreads - not found
+[13.273s] -- Looking for pthread_create in pthread
+[14.747s] -- Looking for pthread_create in pthread - found
+[14.781s] -- Found Threads: TRUE  
+[15.083s] -- Found rt: /usr/lib/aarch64-linux-gnu/librt.so  
+[15.141s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[16.490s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[16.517s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[17.754s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Failed
+[17.763s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[19.191s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[23.103s] -- Configuring done
+[23.420s] -- Generating done
+[23.547s] -- Build files have been written to: /home/ubuntu/dev_ws/build/pigpio
+[23.630s] Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake /home/ubuntu/dev_ws/pigpio-master -DCMAKE_INSTALL_PREFIX=/home/ubuntu/dev_ws/install/pigpio
+[23.663s] Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+[24.567s] [35m[1mScanning dependencies of target pigpio[0m
+[25.015s] [  4%] [32mBuilding C object CMakeFiles/pigpio.dir/pigpio.c.o[0m
+[34.274s] make[2]: *** [CMakeFiles/pigpio.dir/build.make:63: CMakeFiles/pigpio.dir/pigpio.c.o] Interrupt
+[34.302s] make[1]: *** [CMakeFiles/Makefile2:92: CMakeFiles/pigpio.dir/all] Interrupt
+[34.311s] make: *** [Makefile:152: all] Interrupt
+[34.313s] Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '-2': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4

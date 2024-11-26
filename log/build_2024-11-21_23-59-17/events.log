@@ -1,0 +1,239 @@
+[0.000000] (-) TimerEvent: {}
+[0.002336] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.003105] (pigpio) JobQueued: {'identifier': 'pigpio', 'dependencies': OrderedDict()}
+[0.004958] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.099003] (-) TimerEvent: {}
+[0.203555] (pigpio) JobStarted: {'identifier': 'pigpio'}
+[0.204686] (-) TimerEvent: {}
+[0.314091] (-) TimerEvent: {}
+[0.416972] (-) TimerEvent: {}
+[0.518624] (-) TimerEvent: {}
+[0.620027] (-) TimerEvent: {}
+[0.722009] (-) TimerEvent: {}
+[0.823390] (-) TimerEvent: {}
+[0.926082] (-) TimerEvent: {}
+[1.029816] (-) TimerEvent: {}
+[1.132383] (-) TimerEvent: {}
+[1.233835] (-) TimerEvent: {}
+[1.341071] (-) TimerEvent: {}
+[1.443808] (-) TimerEvent: {}
+[1.545644] (-) TimerEvent: {}
+[1.646960] (-) TimerEvent: {}
+[1.748354] (-) TimerEvent: {}
+[1.849835] (-) TimerEvent: {}
+[1.951424] (-) TimerEvent: {}
+[2.055378] (-) TimerEvent: {}
+[2.159207] (-) TimerEvent: {}
+[2.260701] (-) TimerEvent: {}
+[2.362188] (-) TimerEvent: {}
+[2.463692] (-) TimerEvent: {}
+[2.565725] (-) TimerEvent: {}
+[2.669777] (-) TimerEvent: {}
+[2.772025] (-) TimerEvent: {}
+[2.874588] (-) TimerEvent: {}
+[2.976105] (-) TimerEvent: {}
+[3.077691] (-) TimerEvent: {}
+[3.181469] (-) TimerEvent: {}
+[3.283128] (-) TimerEvent: {}
+[3.384649] (-) TimerEvent: {}
+[3.487603] (-) TimerEvent: {}
+[3.589216] (-) TimerEvent: {}
+[3.691893] (-) TimerEvent: {}
+[3.794146] (-) TimerEvent: {}
+[3.863563] (pigpio) JobProgress: {'identifier': 'pigpio', 'progress': 'cmake'}
+[3.870568] (pigpio) JobProgress: {'identifier': 'pigpio', 'progress': 'build'}
+[3.878544] (pigpio) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ubuntu/dev_ws/build/pigpio', '--', '-j4', '-l4'], 'cwd': '/home/ubuntu/dev_ws/build/pigpio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '172.20.10.3 62247 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/dev_ws/install/pigpio/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-25d31478-7cfd-476b-a594-d0d7f1fb5e09.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '18'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/dev_ws/install/pigpio/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bad9be1294.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/dev_ws/install/py_pubsub:/home/ubuntu/dev_ws/install/motor_controller:/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/dev_ws/build/pigpio'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.20.10.3 62247 172.20.10.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/dev_ws/build/motor_controller:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/dev_ws/install/pigpio:/home/ubuntu/dev_ws/install/motor_control')]), 'shell': False}
+[3.927787] (-) TimerEvent: {}
+[4.032254] (-) TimerEvent: {}
+[4.136008] (-) TimerEvent: {}
+[4.239048] (-) TimerEvent: {}
+[4.347884] (-) TimerEvent: {}
+[4.453905] (-) TimerEvent: {}
+[4.558697] (-) TimerEvent: {}
+[4.618840] (pigpio) StdoutLine: {'line': b'[ 13%] Built target pigpio\n'}
+[4.658976] (-) TimerEvent: {}
+[4.760463] (-) TimerEvent: {}
+[4.862014] (-) TimerEvent: {}
+[4.955263] (pigpio) StdoutLine: {'line': b'[ 26%] Built target pigs\n'}
+[4.965820] (-) TimerEvent: {}
+[5.067289] (-) TimerEvent: {}
+[5.169057] (-) TimerEvent: {}
+[5.221226] (pigpio) StdoutLine: {'line': b'[ 39%] Built target pig2vcd\n'}
+[5.269406] (-) TimerEvent: {}
+[5.376183] (-) TimerEvent: {}
+[5.477699] (-) TimerEvent: {}
+[5.579780] (-) TimerEvent: {}
+[5.617362] (pigpio) StdoutLine: {'line': b'[ 47%] Built target pigpiod\n'}
+[5.680066] (-) TimerEvent: {}
+[5.783734] (-) TimerEvent: {}
+[5.885080] (-) TimerEvent: {}
+[5.972097] (pigpio) StdoutLine: {'line': b'[ 56%] Built target x_pigpio\n'}
+[5.985321] (-) TimerEvent: {}
+[6.088081] (-) TimerEvent: {}
+[6.190538] (-) TimerEvent: {}
+[6.264694] (pigpio) StdoutLine: {'line': b'[ 69%] Built target pigpiod_if2\n'}
+[6.290871] (-) TimerEvent: {}
+[6.394259] (-) TimerEvent: {}
+[6.499556] (-) TimerEvent: {}
+[6.593444] (pigpio) StdoutLine: {'line': b'[ 82%] Built target pigpiod_if\n'}
+[6.599803] (-) TimerEvent: {}
+[6.701387] (-) TimerEvent: {}
+[6.803071] (-) TimerEvent: {}
+[6.904408] (-) TimerEvent: {}
+[7.007239] (pigpio) StdoutLine: {'line': b'[ 91%] Built target x_pigpiod_if2\n'}
+[7.008758] (-) TimerEvent: {}
+[7.114345] (-) TimerEvent: {}
+[7.216672] (-) TimerEvent: {}
+[7.318166] (-) TimerEvent: {}
+[7.403061] (pigpio) StdoutLine: {'line': b'[100%] Built target x_pigpiod_if\n'}
+[7.419781] (-) TimerEvent: {}
+[7.524087] (-) TimerEvent: {}
+[7.560814] (pigpio) CommandEnded: {'returncode': 0}
+[7.625928] (-) TimerEvent: {}
+[7.728143] (-) TimerEvent: {}
+[7.831133] (-) TimerEvent: {}
+[7.934717] (-) TimerEvent: {}
+[8.036735] (-) TimerEvent: {}
+[8.147274] (-) TimerEvent: {}
+[8.249019] (-) TimerEvent: {}
+[8.351700] (-) TimerEvent: {}
+[8.454096] (-) TimerEvent: {}
+[8.461105] (pigpio) JobProgress: {'identifier': 'pigpio', 'progress': 'install'}
+[8.554757] (-) TimerEvent: {}
+[8.583294] (pigpio) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ubuntu/dev_ws/build/pigpio'], 'cwd': '/home/ubuntu/dev_ws/build/pigpio', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'ubuntu'), ('SSH_CLIENT', '172.20.10.3 62247 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ubuntu/dev_ws/install/pigpio/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('BROWSER', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/ubuntu'), ('TERM_PROGRAM_VERSION', '1.95.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-25d31478-7cfd-476b-a594-d0d7f1fb5e09.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/ubuntu/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '18'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ubuntu/dev_ws/install/pigpio/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-bad9be1294.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ubuntu/dev_ws/install/py_pubsub:/home/ubuntu/dev_ws/install/motor_controller:/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ubuntu/dev_ws/build/pigpio'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.20.10.3 62247 172.20.10.4 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/dev_ws/build/motor_controller:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ubuntu/dev_ws/install/pigpio:/home/ubuntu/dev_ws/install/motor_control')]), 'shell': False}
+[8.655057] (-) TimerEvent: {}
+[8.719956] (pigpio) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.734655] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpio.so\n'}
+[8.737803] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if.so\n'}
+[8.740362] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if2.so\n'}
+[8.745354] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pig2vcd\n'}
+[8.759988] (-) TimerEvent: {}
+[8.785212] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigpiod\n'}
+[8.788624] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigs\n'}
+[8.790151] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets.cmake\n'}
+[8.792971] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets-noconfig.cmake\n'}
+[8.794597] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfig.cmake\n'}
+[8.796360] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfigVersion.cmake\n'}
+[8.798230] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpio.h\n'}
+[8.799364] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if.h\n'}
+[8.800421] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if2.h\n'}
+[8.801646] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpio.so.1\n'}
+[8.802821] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if.so.1\n'}
+[8.804139] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if2.so.1\n'}
+[8.805334] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pig2vcd.1\n'}
+[8.806576] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigpiod.1\n'}
+[8.807728] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigs.1\n'}
+[8.809044] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpio.3\n'}
+[8.810644] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if.3\n'}
+[8.815072] (pigpio) StdoutLine: {'line': b'-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if2.3\n'}
+[8.860919] (-) TimerEvent: {}
+[8.963655] (-) TimerEvent: {}
+[9.069280] (-) TimerEvent: {}
+[9.174719] (-) TimerEvent: {}
+[9.280658] (-) TimerEvent: {}
+[9.343634] (pigpio) StdoutLine: {'line': b'running install\n'}
+[9.352378] (pigpio) StdoutLine: {'line': b'running build\n'}
+[9.353785] (pigpio) StdoutLine: {'line': b'running build_py\n'}
+[9.367346] (pigpio) StdoutLine: {'line': b'running install_lib\n'}
+[9.383726] (-) TimerEvent: {}
+[9.443991] (pigpio) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.457106] (pigpio) StdoutLine: {'line': b'Writing /usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info\n'}
+[9.465678] (pigpio) StderrLine: {'line': b"error: [Errno 13] Permission denied: '/usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info'\n"}
+[9.487037] (-) TimerEvent: {}
+[9.594400] (-) TimerEvent: {}
+[9.640490] (pigpio) CommandEnded: {'returncode': 0}
+[9.694900] (-) TimerEvent: {}
+[9.797367] (-) TimerEvent: {}
+[9.880305] (pigpio) JobEnded: {'identifier': 'pigpio', 'rc': 0}
+[9.887640] (motor_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ubuntu/dev_ws/build/motor_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ubuntu/dev_ws/build/motor_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ubuntu', 'SSH_CLIENT': '172.20.10.3 62247 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/dev_ws/install/pigpio/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib', 'BROWSER': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/ubuntu', 'TERM_PROGRAM_VERSION': '1.95.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-25d31478-7cfd-476b-a594-d0d7f1fb5e09.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/ubuntu/dev_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '18', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/ubuntu/dev_ws/install/pigpio/bin:/opt/ros/foxy/bin:/home/ubuntu/.vscode-server/cli/servers/Stable-e8653663e8840adaf45af01eab5c627a5af81807/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-bad9be1294.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/ubuntu/dev_ws/install/py_pubsub:/home/ubuntu/dev_ws/install/motor_controller:/home/ubuntu/dev_ws/install/motor_control:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/ubuntu/dev_ws/build/motor_controller', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.3 62247 172.20.10.4 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/home/ubuntu/dev_ws/install/py_pubsub/lib/python3.8/site-packages:/home/ubuntu/dev_ws/build/motor_controller:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/ubuntu/dev_ws/install/pigpio:/home/ubuntu/dev_ws/install/motor_control'}, 'shell': False}
+[9.928253] (-) TimerEvent: {}
+[10.030990] (-) TimerEvent: {}
+[10.132408] (-) TimerEvent: {}
+[10.233919] (-) TimerEvent: {}
+[10.335294] (-) TimerEvent: {}
+[10.436673] (-) TimerEvent: {}
+[10.540029] (-) TimerEvent: {}
+[10.641450] (-) TimerEvent: {}
+[10.743037] (-) TimerEvent: {}
+[10.844940] (-) TimerEvent: {}
+[10.947212] (-) TimerEvent: {}
+[11.048695] (-) TimerEvent: {}
+[11.152048] (-) TimerEvent: {}
+[11.254655] (-) TimerEvent: {}
+[11.356711] (-) TimerEvent: {}
+[11.458198] (-) TimerEvent: {}
+[11.559701] (-) TimerEvent: {}
+[11.661179] (-) TimerEvent: {}
+[11.762701] (-) TimerEvent: {}
+[11.864585] (-) TimerEvent: {}
+[11.969419] (-) TimerEvent: {}
+[12.070905] (-) TimerEvent: {}
+[12.173863] (-) TimerEvent: {}
+[12.277268] (-) TimerEvent: {}
+[12.381811] (-) TimerEvent: {}
+[12.483156] (-) TimerEvent: {}
+[12.589759] (-) TimerEvent: {}
+[12.691256] (-) TimerEvent: {}
+[12.794184] (-) TimerEvent: {}
+[12.901814] (-) TimerEvent: {}
+[13.003668] (-) TimerEvent: {}
+[13.105457] (-) TimerEvent: {}
+[13.209949] (-) TimerEvent: {}
+[13.311416] (-) TimerEvent: {}
+[13.414046] (-) TimerEvent: {}
+[13.465407] (motor_controller) StdoutLine: {'line': b'running develop\n'}
+[13.514363] (-) TimerEvent: {}
+[13.618249] (-) TimerEvent: {}
+[13.720642] (-) TimerEvent: {}
+[13.822058] (-) TimerEvent: {}
+[13.924102] (-) TimerEvent: {}
+[14.026025] (-) TimerEvent: {}
+[14.127454] (-) TimerEvent: {}
+[14.229974] (-) TimerEvent: {}
+[14.331448] (-) TimerEvent: {}
+[14.432822] (-) TimerEvent: {}
+[14.535260] (-) TimerEvent: {}
+[14.636658] (-) TimerEvent: {}
+[14.738159] (-) TimerEvent: {}
+[14.839580] (-) TimerEvent: {}
+[14.941049] (-) TimerEvent: {}
+[15.042393] (-) TimerEvent: {}
+[15.143749] (-) TimerEvent: {}
+[15.245067] (-) TimerEvent: {}
+[15.346670] (-) TimerEvent: {}
+[15.448127] (-) TimerEvent: {}
+[15.549371] (-) TimerEvent: {}
+[15.636602] (motor_controller) StdoutLine: {'line': b'running egg_info\n'}
+[15.642188] (motor_controller) StdoutLine: {'line': b'writing motor_controller.egg-info/PKG-INFO\n'}
+[15.654326] (motor_controller) StdoutLine: {'line': b'writing dependency_links to motor_controller.egg-info/dependency_links.txt\n'}
+[15.655769] (-) TimerEvent: {}
+[15.657052] (motor_controller) StdoutLine: {'line': b'writing entry points to motor_controller.egg-info/entry_points.txt\n'}
+[15.658363] (motor_controller) StdoutLine: {'line': b'writing requirements to motor_controller.egg-info/requires.txt\n'}
+[15.659578] (motor_controller) StdoutLine: {'line': b'writing top-level names to motor_controller.egg-info/top_level.txt\n'}
+[15.756065] (-) TimerEvent: {}
+[15.857495] (-) TimerEvent: {}
+[15.959490] (-) TimerEvent: {}
+[16.061639] (-) TimerEvent: {}
+[16.068939] (motor_controller) StdoutLine: {'line': b"reading manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[16.081036] (motor_controller) StdoutLine: {'line': b"writing manifest file 'motor_controller.egg-info/SOURCES.txt'\n"}
+[16.161900] (-) TimerEvent: {}
+[16.263240] (-) TimerEvent: {}
+[16.364623] (-) TimerEvent: {}
+[16.466174] (-) TimerEvent: {}
+[16.568480] (-) TimerEvent: {}
+[16.574093] (motor_controller) StdoutLine: {'line': b'running build_ext\n'}
+[16.577956] (motor_controller) StdoutLine: {'line': b'Creating /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor-controller.egg-link (link to .)\n'}
+[16.587198] (motor_controller) StdoutLine: {'line': b'Installing controller script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[16.589261] (motor_controller) StdoutLine: {'line': b'Installing estop script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[16.591276] (motor_controller) StdoutLine: {'line': b'Installing relay script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[16.593826] (motor_controller) StdoutLine: {'line': b'Installing salter script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller\n'}
+[16.599121] (motor_controller) StdoutLine: {'line': b'\n'}
+[16.603372] (motor_controller) StdoutLine: {'line': b'Installed /home/ubuntu/dev_ws/build/motor_controller\n'}
+[16.605421] (motor_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[16.668901] (-) TimerEvent: {}
+[16.771469] (-) TimerEvent: {}
+[16.824993] (motor_controller) CommandEnded: {'returncode': 0}
+[16.874295] (-) TimerEvent: {}
+[16.970061] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[16.975635] (-) TimerEvent: {}
+[16.983888] (-) EventReactorShutdown: {}

@@ -1,0 +1,57 @@
+[0.000000] (-) TimerEvent: {}
+[0.001557] (motor_controller) JobQueued: {'identifier': 'motor_controller', 'dependencies': OrderedDict()}
+[0.003955] (pigpio) JobQueued: {'identifier': 'pigpio', 'dependencies': OrderedDict()}
+[0.011548] (motor_controller) JobStarted: {'identifier': 'motor_controller'}
+[0.102449] (-) TimerEvent: {}
+[0.205023] (-) TimerEvent: {}
+[0.241503] (pigpio) JobStarted: {'identifier': 'pigpio'}
+[0.321947] (-) TimerEvent: {}
+[0.434592] (-) TimerEvent: {}
+[0.539354] (-) TimerEvent: {}
+[0.644518] (-) TimerEvent: {}
+[0.751162] (-) TimerEvent: {}
+[0.861982] (-) TimerEvent: {}
+[0.970907] (-) TimerEvent: {}
+[1.074165] (-) TimerEvent: {}
+[1.175782] (-) TimerEvent: {}
+[1.277468] (-) TimerEvent: {}
+[1.379329] (-) TimerEvent: {}
+[1.481052] (-) TimerEvent: {}
+[1.582816] (-) TimerEvent: {}
+[1.684360] (-) TimerEvent: {}
+[1.786085] (-) TimerEvent: {}
+[1.887696] (-) TimerEvent: {}
+[1.989308] (-) TimerEvent: {}
+[2.092621] (-) TimerEvent: {}
+[2.199018] (-) TimerEvent: {}
+[2.300525] (-) TimerEvent: {}
+[2.402048] (-) TimerEvent: {}
+[2.503631] (-) TimerEvent: {}
+[2.605201] (-) TimerEvent: {}
+[2.710070] (-) TimerEvent: {}
+[2.812693] (-) TimerEvent: {}
+[2.915209] (-) TimerEvent: {}
+[3.016790] (-) TimerEvent: {}
+[3.118585] (-) TimerEvent: {}
+[3.220761] (-) TimerEvent: {}
+[3.323142] (-) TimerEvent: {}
+[3.430120] (-) TimerEvent: {}
+[3.531666] (-) TimerEvent: {}
+[3.634186] (-) TimerEvent: {}
+[3.735641] (-) TimerEvent: {}
+[3.842478] (-) TimerEvent: {}
+[3.944882] (-) TimerEvent: {}
+[4.046482] (-) TimerEvent: {}
+[4.154448] (-) TimerEvent: {}
+[4.256126] (-) TimerEvent: {}
+[4.357711] (-) TimerEvent: {}
+[4.460172] (-) TimerEvent: {}
+[4.561912] (-) TimerEvent: {}
+[4.664236] (-) TimerEvent: {}
+[4.770376] (-) TimerEvent: {}
+[4.871943] (-) TimerEvent: {}
+[4.974005] (-) TimerEvent: {}
+[5.076459] (-) TimerEvent: {}
+[5.150994] (motor_controller) JobEnded: {'identifier': 'motor_controller', 'rc': 0}
+[5.156249] (pigpio) JobEnded: {'identifier': 'pigpio', 'rc': 'SIGINT'}
+[5.174454] (-) EventReactorShutdown: {}

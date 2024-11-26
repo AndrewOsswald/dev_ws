@@ -1,0 +1,17 @@
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/install/strip.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/list_install_components.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pigpio.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pigpiod_if.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/install.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pigpiod_if2.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/x_pigpio.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/package_source.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/install/local.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/x_pigpiod_if.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/x_pigpiod_if2.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pigs.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pig2vcd.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/package.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/edit_cache.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/pigpiod.dir
+/home/ubuntu/dev_ws/build/pigpio/CMakeFiles/rebuild_cache.dir

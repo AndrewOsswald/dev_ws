@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/x_pigpio.dir/x_pigpio.c.o  -o x_pigpio  -Wl,-rpath,/home/ubuntu/dev_ws/build/pigpio libpigpio.so -lrt -lpthread 

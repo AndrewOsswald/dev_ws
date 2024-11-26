@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pigs.dir/pigs.c.o CMakeFiles/pigs.dir/command.c.o  -o pigs  -lpthread 

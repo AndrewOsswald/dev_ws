@@ -1,0 +1,19 @@
+[10.343s] Invoking command in '/home/ubuntu/dev_ws/build/motor_controller': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data
+[13.706s] running develop
+[15.829s] running egg_info
+[15.832s] writing motor_controller.egg-info/PKG-INFO
+[15.834s] writing dependency_links to motor_controller.egg-info/dependency_links.txt
+[15.836s] writing entry points to motor_controller.egg-info/entry_points.txt
+[15.838s] writing requirements to motor_controller.egg-info/requires.txt
+[15.839s] writing top-level names to motor_controller.egg-info/top_level.txt
+[16.246s] reading manifest file 'motor_controller.egg-info/SOURCES.txt'
+[16.257s] writing manifest file 'motor_controller.egg-info/SOURCES.txt'
+[16.746s] running build_ext
+[16.753s] Creating /home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages/motor-controller.egg-link (link to .)
+[16.760s] Installing controller script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[16.762s] Installing relay script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[16.767s] Installing salter script to /home/ubuntu/dev_ws/install/motor_controller/lib/motor_controller
+[16.769s] 
+[16.781s] Installed /home/ubuntu/dev_ws/build/motor_controller
+[16.799s] running symlink_data
+[17.067s] Invoked command in '/home/ubuntu/dev_ws/build/motor_controller' returned '0': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data

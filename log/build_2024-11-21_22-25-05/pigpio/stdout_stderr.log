@@ -1,0 +1,43 @@
+[ 13%] Built target pigpio
+[ 26%] Built target pigs
+[ 39%] Built target pig2vcd
+[ 47%] Built target pigpiod
+[ 56%] Built target x_pigpio
+[ 69%] Built target pigpiod_if2
+[ 82%] Built target pigpiod_if
+[ 91%] Built target x_pigpiod_if2
+[100%] Built target x_pigpiod_if
+-- Install configuration: ""
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpio.so
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if.so
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if2.so
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/bin/pig2vcd
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/bin/pigpiod
+-- Set runtime path of "/home/ubuntu/dev_ws/install/pigpio/bin/pigpiod" to ""
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/bin/pigs
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets.cmake
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets-noconfig.cmake
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfig.cmake
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfigVersion.cmake
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/include/pigpio.h
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if.h
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if2.h
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpio.so.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if.so.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if2.so.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/pig2vcd.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigpiod.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigs.1
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpio.3
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if.3
+-- Installing: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if2.3
+running install
+running build
+running build_py
+creating build
+creating build/lib
+copying /home/ubuntu/dev_ws/pigpio-master/pigpio.py -> build/lib
+running install_lib
+running install_egg_info
+Writing /usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info
+error: [Errno 13] Permission denied: '/usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info'

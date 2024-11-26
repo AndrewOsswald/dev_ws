@@ -1,0 +1,40 @@
+[35m[1mScanning dependencies of target pigpiod_if[0m
+[35m[1mScanning dependencies of target pigpiod_if2[0m
+[35m[1mScanning dependencies of target pigs[0m
+[  4%] [32mBuilding C object CMakeFiles/pigpio.dir/pigpio.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/pigpiod_if.dir/pigpiod_if.c.o[0m
+[ 13%] [32mBuilding C object CMakeFiles/pigs.dir/pigs.c.o[0m
+[ 17%] [32mBuilding C object CMakeFiles/pigpiod_if2.dir/pigpiod_if2.c.o[0m
+[ 21%] [32mBuilding C object CMakeFiles/pigs.dir/command.c.o[0m
+[ 26%] [32mBuilding C object CMakeFiles/pigpiod_if.dir/command.c.o[0m
+[ 30%] [32m[1mLinking C executable pigs[0m
+[ 34%] [32mBuilding C object CMakeFiles/pigpiod_if2.dir/command.c.o[0m
+[ 34%] Built target pigs
+[ 39%] [32mBuilding C object CMakeFiles/pigpio.dir/command.c.o[0m
+[ 43%] [32m[1mLinking C shared library libpigpiod_if.so[0m
+[ 47%] [32m[1mLinking C shared library libpigpiod_if2.so[0m
+[ 47%] Built target pigpiod_if2
+[35m[1mScanning dependencies of target pig2vcd[0m
+[ 47%] Built target pigpiod_if
+[35m[1mScanning dependencies of target x_pigpiod_if[0m
+[ 52%] [32mBuilding C object CMakeFiles/pig2vcd.dir/pig2vcd.c.o[0m
+[ 56%] [32mBuilding C object CMakeFiles/pig2vcd.dir/command.c.o[0m
+[ 60%] [32mBuilding C object CMakeFiles/x_pigpiod_if.dir/x_pigpiod_if.c.o[0m
+[35m[1mScanning dependencies of target x_pigpiod_if2[0m
+[ 65%] [32mBuilding C object CMakeFiles/x_pigpiod_if2.dir/x_pigpiod_if2.c.o[0m
+[ 69%] [32m[1mLinking C executable x_pigpiod_if[0m
+[ 73%] [32m[1mLinking C executable pig2vcd[0m
+[ 73%] Built target x_pigpiod_if
+[ 73%] Built target pig2vcd
+[ 78%] [32m[1mLinking C executable x_pigpiod_if2[0m
+[ 78%] Built target x_pigpiod_if2
+[ 82%] [32m[1mLinking C shared library libpigpio.so[0m
+[ 82%] Built target pigpio
+[35m[1mScanning dependencies of target x_pigpio[0m
+[ 86%] [32mBuilding C object CMakeFiles/x_pigpio.dir/x_pigpio.c.o[0m
+[ 91%] [32m[1mLinking C executable x_pigpio[0m
+[ 91%] Built target x_pigpio
+[35m[1mScanning dependencies of target pigpiod[0m
+[ 95%] [32mBuilding C object CMakeFiles/pigpiod.dir/pigpiod.c.o[0m
+[100%] [32m[1mLinking C executable pigpiod[0m
+[100%] Built target pigpiod

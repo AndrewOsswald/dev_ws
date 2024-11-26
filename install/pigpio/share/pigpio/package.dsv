@@ -1,0 +1,12 @@
+source;share/pigpio/hook/cmake_prefix_path.ps1
+source;share/pigpio/hook/cmake_prefix_path.dsv
+source;share/pigpio/hook/cmake_prefix_path.sh
+source;share/pigpio/hook/ld_library_path_lib.ps1
+source;share/pigpio/hook/ld_library_path_lib.dsv
+source;share/pigpio/hook/ld_library_path_lib.sh
+source;share/pigpio/hook/path.ps1
+source;share/pigpio/hook/path.dsv
+source;share/pigpio/hook/path.sh
+source;share/pigpio/hook/pythonscriptspath.ps1
+source;share/pigpio/hook/pythonscriptspath.dsv
+source;share/pigpio/hook/pythonscriptspath.sh

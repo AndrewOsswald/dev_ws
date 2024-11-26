@@ -1,0 +1,43 @@
+[3.875s] Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+[4.710s] [ 13%] Built target pigpio
+[5.041s] [ 26%] Built target pigs
+[5.379s] [ 39%] Built target pig2vcd
+[5.822s] [ 47%] Built target pigpiod
+[6.472s] [ 56%] Built target x_pigpio
+[6.895s] [ 69%] Built target pigpiod_if2
+[7.263s] [ 82%] Built target pigpiod_if
+[7.796s] [ 91%] Built target x_pigpiod_if2
+[8.234s] [100%] Built target x_pigpiod_if
+[8.391s] Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+[9.382s] Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --install /home/ubuntu/dev_ws/build/pigpio
+[9.547s] -- Install configuration: ""
+[9.556s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpio.so
+[9.562s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if.so
+[9.571s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if2.so
+[9.590s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pig2vcd
+[9.602s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigpiod
+[9.630s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigs
+[9.638s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets.cmake
+[9.654s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets-noconfig.cmake
+[9.658s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfig.cmake
+[9.672s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfigVersion.cmake
+[9.673s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpio.h
+[9.683s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if.h
+[9.696s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if2.h
+[9.698s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpio.so.1
+[9.699s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if.so.1
+[9.700s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if2.so.1
+[9.701s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pig2vcd.1
+[9.702s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigpiod.1
+[9.703s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigs.1
+[9.704s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpio.3
+[9.706s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if.3
+[9.717s] -- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if2.3
+[10.400s] running install
+[10.463s] running build
+[10.480s] running build_py
+[10.501s] running install_lib
+[10.693s] running install_egg_info
+[10.713s] Writing /usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info
+[10.720s] error: [Errno 13] Permission denied: '/usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info'
+[10.851s] Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake --install /home/ubuntu/dev_ws/build/pigpio

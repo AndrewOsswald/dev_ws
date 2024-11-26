@@ -1,0 +1,201 @@
+[4.260s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[4.261s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb0a4cb20>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb0a4cb20>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb09b3a60>)
+[6.752s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[6.754s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[6.756s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[6.757s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[6.758s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[6.760s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[6.762s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/dev_ws'
+[6.766s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[6.769s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[6.771s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[6.773s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[6.774s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[6.775s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[6.775s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[6.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[6.776s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[6.905s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[6.906s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[6.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[6.907s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[6.908s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[6.909s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[6.910s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[6.911s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[6.913s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[6.914s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[6.915s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[6.919s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[6.920s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[6.921s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[6.924s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extensions ['ignore', 'ignore_ament_install']
+[6.925s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'ignore'
+[6.926s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'ignore_ament_install'
+[6.927s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extensions ['colcon_pkg']
+[6.928s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'colcon_pkg'
+[6.928s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extensions ['colcon_meta']
+[6.929s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'colcon_meta'
+[6.930s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extensions ['ros']
+[6.931s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'ros'
+[6.932s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extensions ['cmake', 'python']
+[6.933s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'cmake'
+[6.976s] Level 1:colcon.colcon_core.package_identification:_identify(pigpio-master) by extension 'python'
+[6.978s] DEBUG:colcon.colcon_core.package_identification:Package 'pigpio-master' with type 'cmake' and name 'pigpio'
+[6.980s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[6.981s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[6.982s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[6.982s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[6.983s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[6.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[6.984s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[6.985s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[6.986s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[6.987s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[6.988s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[6.989s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[6.990s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extensions ['ignore', 'ignore_ament_install']
+[6.991s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) by extension 'ignore'
+[6.992s] Level 1:colcon.colcon_core.package_identification:_identify(src/build) ignored
+[6.994s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extensions ['ignore', 'ignore_ament_install']
+[6.995s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) by extension 'ignore'
+[6.996s] Level 1:colcon.colcon_core.package_identification:_identify(src/install) ignored
+[6.998s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extensions ['ignore', 'ignore_ament_install']
+[6.999s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) by extension 'ignore'
+[7.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/log) ignored
+[7.001s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extensions ['ignore', 'ignore_ament_install']
+[7.002s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extension 'ignore'
+[7.003s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extension 'ignore_ament_install'
+[7.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extensions ['colcon_pkg']
+[7.004s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extension 'colcon_pkg'
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extensions ['colcon_meta']
+[7.005s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extension 'colcon_meta'
+[7.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extensions ['ros']
+[7.006s] Level 1:colcon.colcon_core.package_identification:_identify(src/motor_controller) by extension 'ros'
+[7.033s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motor_controller' with type 'ros.ament_python' and name 'motor_controller'
+[7.034s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[7.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[7.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[7.035s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[7.036s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[7.209s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[7.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[7.236s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/ubuntu/dev_ws/install
+[7.259s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 255 installed packages in /opt/ros/foxy
+[7.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[8.383s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_args' from command line to 'None'
+[8.384s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target' from command line to 'None'
+[8.384s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.385s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[8.385s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_clean_first' from command line to 'False'
+[8.386s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'cmake_force_configure' from command line to 'False'
+[8.386s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'ament_cmake_args' from command line to 'None'
+[8.387s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[8.387s] Level 5:colcon.colcon_core.verb:set package 'motor_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.388s] DEBUG:colcon.colcon_core.verb:Building package 'motor_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/dev_ws/build/motor_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/dev_ws/install/motor_controller', 'merge_install': False, 'path': '/home/ubuntu/dev_ws/src/motor_controller', 'symlink_install': True, 'test_result_base': None}
+[8.393s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_args' from command line to 'None'
+[8.394s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_target' from command line to 'None'
+[8.394s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[8.395s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_clean_cache' from command line to 'False'
+[8.395s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_clean_first' from command line to 'False'
+[8.396s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'cmake_force_configure' from command line to 'False'
+[8.396s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'ament_cmake_args' from command line to 'None'
+[8.397s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'catkin_cmake_args' from command line to 'None'
+[8.397s] Level 5:colcon.colcon_core.verb:set package 'pigpio' build argument 'catkin_skip_building_tests' from command line to 'False'
+[8.398s] DEBUG:colcon.colcon_core.verb:Building package 'pigpio' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/dev_ws/build/pigpio', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/dev_ws/install/pigpio', 'merge_install': False, 'path': '/home/ubuntu/dev_ws/pigpio-master', 'symlink_install': True, 'test_result_base': None}
+[8.400s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[8.410s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[8.413s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ubuntu/dev_ws/src/motor_controller' with build type 'ament_python'
+[8.415s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_controller', 'ament_prefix_path')
+[8.443s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[8.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/ament_prefix_path.ps1'
+[8.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/ament_prefix_path.dsv'
+[8.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/ament_prefix_path.sh'
+[8.477s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.541s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/dev_ws/pigpio-master'
+[8.549s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.551s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.066s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ubuntu/dev_ws/src/motor_controller'
+[12.071s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[12.072s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+[15.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake --build /home/ubuntu/dev_ws/build/pigpio -- -j4 -l4
+[16.895s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/dev_ws/build/pigpio': /usr/bin/cmake --install /home/ubuntu/dev_ws/build/pigpio
+[17.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pigpio)
+[17.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/dev_ws/build/pigpio' returned '0': /usr/bin/cmake --install /home/ubuntu/dev_ws/build/pigpio
+[18.034s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio' for CMake module files
+[18.041s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio' for CMake config files
+[18.047s] Level 1:colcon.colcon_core.shell:create_environment_hook('pigpio', 'cmake_prefix_path')
+[18.052s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/cmake_prefix_path.ps1'
+[18.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/cmake_prefix_path.dsv'
+[18.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/cmake_prefix_path.sh'
+[18.101s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio/lib'
+[18.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('pigpio', 'ld_library_path_lib')
+[18.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/ld_library_path_lib.ps1'
+[18.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/ld_library_path_lib.dsv'
+[18.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/ld_library_path_lib.sh'
+[18.154s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio/bin'
+[18.156s] Level 1:colcon.colcon_core.shell:create_environment_hook('pigpio', 'path')
+[18.160s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/path.ps1'
+[18.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/path.dsv'
+[18.176s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/path.sh'
+[18.189s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio/lib/pkgconfig/pigpio.pc'
+[18.195s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio/lib/python3.8/site-packages'
+[18.198s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/pigpio/bin'
+[18.206s] Level 1:colcon.colcon_core.shell:create_environment_hook('pigpio', 'pythonscriptspath')
+[18.210s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/pythonscriptspath.ps1'
+[18.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/pythonscriptspath.dsv'
+[18.224s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/hook/pythonscriptspath.sh'
+[18.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/package.ps1'
+[18.261s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/package.dsv'
+[18.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/package.sh'
+[18.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/package.bash'
+[18.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/pigpio/share/pigpio/package.zsh'
+[18.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/dev_ws/install/pigpio/share/colcon-core/packages/pigpio)
+[18.395s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/dev_ws/build/motor_controller': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data
+[25.143s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_controller', 'pythonpath_develop')
+[25.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/build/motor_controller/share/motor_controller/hook/pythonpath_develop.ps1'
+[25.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/dev_ws/build/motor_controller' returned '0': PYTHONPATH=/home/ubuntu/dev_ws/build/motor_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/ubuntu/dev_ws/build/motor_controller/build --no-deps symlink_data
+[25.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/build/motor_controller/share/motor_controller/hook/pythonpath_develop.dsv'
+[25.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/build/motor_controller/share/motor_controller/hook/pythonpath_develop.sh'
+[25.194s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller' for CMake module files
+[25.200s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller' for CMake config files
+[25.209s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller/lib'
+[25.211s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller/bin'
+[25.212s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller/lib/pkgconfig/motor_controller.pc'
+[25.215s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller/lib/python3.8/site-packages'
+[25.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('motor_controller', 'pythonpath')
+[25.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/pythonpath.ps1'
+[25.224s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/pythonpath.dsv'
+[25.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/hook/pythonpath.sh'
+[25.234s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/dev_ws/install/motor_controller/bin'
+[25.235s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motor_controller)
+[25.239s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/package.ps1'
+[25.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/package.dsv'
+[25.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/package.sh'
+[25.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/package.bash'
+[25.267s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/dev_ws/install/motor_controller/share/motor_controller/package.zsh'
+[25.271s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/dev_ws/install/motor_controller/share/colcon-core/packages/motor_controller)
+[25.276s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[25.281s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[25.283s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[25.285s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[25.357s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[25.358s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[25.359s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[25.372s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[25.373s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[25.376s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/dev_ws/install/local_setup.ps1'
+[25.391s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/dev_ws/install/_local_setup_util_ps1.py'
+[25.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/dev_ws/install/setup.ps1'
+[25.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/dev_ws/install/local_setup.sh'
+[25.430s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/dev_ws/install/_local_setup_util_sh.py'
+[25.437s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/dev_ws/install/setup.sh'
+[25.451s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/dev_ws/install/local_setup.bash'
+[25.458s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/dev_ws/install/setup.bash'
+[25.471s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/dev_ws/install/local_setup.zsh'
+[25.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/dev_ws/install/setup.zsh'

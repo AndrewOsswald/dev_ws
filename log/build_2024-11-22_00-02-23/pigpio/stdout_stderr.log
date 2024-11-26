@@ -1,0 +1,39 @@
+[ 13%] Built target pigpio
+[ 26%] Built target pigs
+[ 39%] Built target pig2vcd
+[ 47%] Built target pigpiod
+[ 56%] Built target x_pigpio
+[ 69%] Built target pigpiod_if2
+[ 82%] Built target pigpiod_if
+[ 91%] Built target x_pigpiod_if2
+[100%] Built target x_pigpiod_if
+-- Install configuration: ""
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpio.so
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if.so
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/libpigpiod_if2.so
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pig2vcd
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigpiod
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/bin/pigs
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets.cmake
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioTargets-noconfig.cmake
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfig.cmake
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/lib/cmake/pigpio/pigpioConfigVersion.cmake
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpio.h
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if.h
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/include/pigpiod_if2.h
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpio.so.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if.so.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/libpigpiod_if2.so.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pig2vcd.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigpiod.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man1/pigs.1
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpio.3
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if.3
+-- Up-to-date: /home/ubuntu/dev_ws/install/pigpio/man/man3/pigpiod_if2.3
+running install
+running build
+running build_py
+running install_lib
+running install_egg_info
+error: [Errno 13] Permission denied: '/usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info'
+Writing /usr/local/lib/python3.8/dist-packages/pigpio-1.44.egg-info

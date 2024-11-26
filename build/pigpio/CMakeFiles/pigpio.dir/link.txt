@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libpigpio.so -o libpigpio.so CMakeFiles/pigpio.dir/pigpio.c.o CMakeFiles/pigpio.dir/command.c.o 
