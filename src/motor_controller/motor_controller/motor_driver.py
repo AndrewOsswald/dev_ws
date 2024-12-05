@@ -59,12 +59,12 @@ class MotorController(Node):
 
         # Define ramp rates for acceleration and deceleration
         self.accel_rate_low = 0.01   # Under 10% acceleration
-        self.accel_rate_mid = 0.03   # Under 25% acceleration
-        self.accel_rate_high = 0.1   # Above 25% acceleration
+        self.accel_rate_mid = 0.02   # Under 25% acceleration
+        self.accel_rate_high = 0.05   # Above 25% acceleration
 
-        self.decel_rate_low = 0.02   # Under 10% deceleration
-        self.decel_rate_mid = 0.05   # Under 25% deceleration
-        self.decel_rate_high = 0.15  # Above 25% deceleration
+        self.decel_rate_low = 0.01   # Under 10% deceleration
+        self.decel_rate_mid = 0.02   # Under 25% deceleration
+        self.decel_rate_high = 0.05  # Above 25% deceleration
 
         # Timer for stopping motors on timeout
         self.last_cmd_time = time()
@@ -72,6 +72,9 @@ class MotorController(Node):
 
         # E-stop status
         self.estop_status = "safe"  # Default to safe
+
+        # Maximum speed as a percentage (0 to 100)
+        self.max_speed_percentage = 75  # Limit speed to 75% of maximum
 
         # Create subscribers
         self.cmd_vel_subscription = self.create_subscription(
@@ -120,6 +123,10 @@ class MotorController(Node):
 
         left_speed = max(-1, min(1, left_speed / max_linear_speed)) * 100
         right_speed = max(-1, min(1, right_speed / max_linear_speed)) * 100
+
+        # Apply maximum speed percentage
+        left_speed *= self.max_speed_percentage / 100
+        right_speed *= self.max_speed_percentage / 100
 
         return left_speed, right_speed
 

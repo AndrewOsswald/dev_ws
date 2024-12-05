@@ -1,0 +1,17 @@
+package.xml
+setup.cfg
+setup.py
+motor_controller/__init__.py
+motor_controller/estop.py
+motor_controller/motor_driver.py
+motor_controller/motor_driver_shit dont work.py
+motor_controller/relay.py
+motor_controller/salter.py
+motor_controller.egg-info/PKG-INFO
+motor_controller.egg-info/SOURCES.txt
+motor_controller.egg-info/dependency_links.txt
+motor_controller.egg-info/entry_points.txt
+motor_controller.egg-info/requires.txt
+motor_controller.egg-info/top_level.txt
+motor_controller.egg-info/zip-safe
+resource/motor_controller

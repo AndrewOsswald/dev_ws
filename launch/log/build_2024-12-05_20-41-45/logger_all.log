@@ -1,0 +1,66 @@
+[2.221s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[2.222s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb44f2310>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb44f2310>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb445c2e0>)
+[4.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.244s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.245s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/dev_ws/launch'
+[4.247s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.248s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.252s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.253s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.254s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.256s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.257s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.258s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.384s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.385s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.387s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.388s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.389s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[4.390s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[4.390s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[4.391s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[4.392s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[4.392s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[4.393s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[4.394s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[4.394s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[4.395s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[4.395s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[4.396s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[4.397s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.398s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.401s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.401s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.403s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.404s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.404s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.405s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.554s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.574s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/ubuntu/dev_ws/launch/install
+[4.595s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[4.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.695s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.705s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.706s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.707s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.708s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.769s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.771s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.772s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.998s] DEBUG:colcon.colcon_core.event_reactor:joined thread
